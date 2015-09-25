@@ -1,0 +1,59 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
+
+*{
+	font-family: 'Lato', sans-serif;
+}
+
+body{
+	background-image: url('../media/symphony.png');
+	 background-repeat: repeat-xy;
+}
+
+h2{
+	color: #4191ff ;
+	font-size: 36pt;
+	text-align: center;
+}
+
+fieldset {
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    border: 3px solid #4191ff ;
+}
+ 
+
+form {
+	padding: 1em;
+	background-color: rgba(255,255,255,.56);
+}
+
+.button{
+	margin: 1em;
+}
+
+legend{
+	font-size: 18pt;
+}
+
+#map-container{
+	border: 1px solid black;
+}
+
+td{
+	padding-right: 1em;
+	text-align: left;
+}
+
+tr:nth-child(even){
+	background: #CCC;
+}
+tr:nth-child(odd){
+	background: #FFF;
+}
+
+#map-canvas {
+    width: 500px;
+    height: 400px;
+    background-color: #CCC;
+ }
