@@ -4,7 +4,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 			<meta name="referrer" content="no-referrer">
 	<meta name="superfish" content="nofish">
-<script type="text/javascript" async="" src="./erika _ Blitzkrieg Slack_files/mixpanel-2-latest.min.js"></script><script async="" src="./erika _ Blitzkrieg Slack_files/beacon.js"></script><script async="" src="./erika _ Blitzkrieg Slack_files/analytics.js"></script><script>
+<script type="text/javascript" async="" src="erika%20_%20Blitzkrieg%20Slack_files/mixpanel-2-latest.min.js"></script><script async="" src="erika%20_%20Blitzkrieg%20Slack_files/beacon.js"></script><script async="" src="erika%20_%20Blitzkrieg%20Slack_files/analytics.js"></script><script>
 !function(a,b){function c(a,b){try{if("function"!=typeof a)return a;if(!a.bugsnag){var c=e();a.bugsnag=function(d){if(b&&b.eventHandler&&(u=d),v=c,!y){var e=a.apply(this,arguments);return v=null,e}try{return a.apply(this,arguments)}catch(f){throw l("autoNotify",!0)&&(x.notifyException(f,null,null,"error"),s()),f}finally{v=null}},a.bugsnag.bugsnag=a.bugsnag}return a.bugsnag}catch(d){return a}}function d(){B=!1}function e(){var a=document.currentScript||v;if(!a&&B){var b=document.scripts||document.getElementsByTagName("script");a=b[b.length-1]}return a}function f(a){var b=e();b&&(a.script={src:b.src,content:l("inlineScript",!0)?b.innerHTML:""})}function g(b){var c=l("disableLog"),d=a.console;void 0===d||void 0===d.log||c||d.log("[Bugsnag] "+b)}function h(b,c,d){if(d>=5)return encodeURIComponent(c)+"=[RECURSIVE]";d=d+1||1;try{if(a.Node&&b instanceof a.Node)return encodeURIComponent(c)+"="+encodeURIComponent(r(b));var e=[];for(var f in b)if(b.hasOwnProperty(f)&&null!=f&&null!=b[f]){var g=c?c+"["+f+"]":f,i=b[f];e.push("object"==typeof i?h(i,g,d):encodeURIComponent(g)+"="+encodeURIComponent(i))}return e.join("&")}catch(j){return encodeURIComponent(c)+"="+encodeURIComponent(""+j)}}function i(a,b){if(null==b)return a;a=a||{};for(var c in b)if(b.hasOwnProperty(c))try{a[c]=b[c].constructor===Object?i(a[c],b[c]):b[c]}catch(d){a[c]=b[c]}return a}function j(a,b){a+="?"+h(b)+"&ct=img&cb="+(new Date).getTime();var c=new Image;c.src=a}function k(a){var b={},c=/^data\-([\w\-]+)$/;if(a)for(var d=a.attributes,e=0;e<d.length;e++){var f=d[e];if(c.test(f.nodeName)){var g=f.nodeName.match(c)[1];b[g]=f.value||f.nodeValue}}return b}function l(a,b){C=C||k(J);var c=void 0!==x[a]?x[a]:C[a.toLowerCase()];return"false"===c&&(c=!1),void 0!==c?c:b}function m(a){return a&&a.match(D)?!0:(g("Invalid API key '"+a+"'"),!1)}function n(b,c){var d=l("apiKey");if(m(d)&&A){A-=1;var e=l("releaseStage"),f=l("notifyReleaseStages");if(f){for(var h=!1,k=0;k<f.length;k++)if(e===f[k]){h=!0;break}if(!h)return}var n=[b.name,b.message,b.stacktrace].join("|");if(n!==w){w=n,u&&(c=c||{},c["Last Event"]=q(u));var o={notifierVersion:H,apiKey:d,projectRoot:l("projectRoot")||a.location.protocol+"//"+a.location.host,context:l("context")||a.location.pathname,userId:l("userId"),user:l("user"),metaData:i(i({},l("metaData")),c),releaseStage:e,appVersion:l("appVersion"),url:a.location.href,userAgent:navigator.userAgent,language:navigator.language||navigator.userLanguage,severity:b.severity,name:b.name,message:b.message,stacktrace:b.stacktrace,file:b.file,lineNumber:b.lineNumber,columnNumber:b.columnNumber,payloadVersion:"2"},p=x.beforeNotify;if("function"==typeof p){var r=p(o,o.metaData);if(r===!1)return}return 0===o.lineNumber&&/Script error\.?/.test(o.message)?g("Ignoring cross-domain script error. See https://bugsnag.com/docs/notifiers/js/cors"):(j(l("endpoint")||G,o),void 0)}}}function o(){var a,b,c=10,d="[anonymous]";try{throw new Error("")}catch(e){a="<generated>\n",b=p(e)}if(!b){a="<generated-ie>\n";var f=[];try{for(var h=arguments.callee.caller.caller;h&&f.length<c;){var i=E.test(h.toString())?RegExp.$1||d:d;f.push(i),h=h.caller}}catch(j){g(j)}b=f.join("\n")}return a+b}function p(a){return a.stack||a.backtrace||a.stacktrace}function q(a){var b={millisecondsAgo:new Date-a.timeStamp,type:a.type,which:a.which,target:r(a.target)};return b}function r(a){if(a){var b=a.attributes;if(b){for(var c="<"+a.nodeName.toLowerCase(),d=0;d<b.length;d++)b[d].value&&"null"!=b[d].value.toString()&&(c+=" "+b[d].name+'="'+b[d].value+'"');return c+">"}return a.nodeName}}function s(){z+=1,a.setTimeout(function(){z-=1})}function t(a,b,c){var d=a[b],e=c(d);a[b]=e}var u,v,w,x={},y=!0,z=0,A=10;x.noConflict=function(){return a.Bugsnag=b,x},x.refresh=function(){A=10},x.notifyException=function(a,b,c,d){b&&"string"!=typeof b&&(c=b,b=void 0),c||(c={}),f(c),n({name:b||a.name,message:a.message||a.description,stacktrace:p(a)||o(),file:a.fileName||a.sourceURL,lineNumber:a.lineNumber||a.line,columnNumber:a.columnNumber?a.columnNumber+1:void 0,severity:d||"warning"},c)},x.notify=function(b,c,d,e){n({name:b,message:c,stacktrace:o(),file:a.location.toString(),lineNumber:1,severity:e||"warning"},d)};var B="complete"!==document.readyState;document.addEventListener?(document.addEventListener("DOMContentLoaded",d,!0),a.addEventListener("load",d,!0)):a.attachEvent("onload",d);var C,D=/^[0-9a-f]{32}$/i,E=/function\s*([\w\-$]+)?\s*\(/i,F="https://notify.bugsnag.com/",G=F+"js",H="2.4.7",I=document.getElementsByTagName("script"),J=I[I.length-1];if(a.atob){if(a.ErrorEvent)try{0===new a.ErrorEvent("test").colno&&(y=!1)}catch(K){}}else y=!1;if(l("autoNotify",!0)){t(a,"onerror",function(b){return function(c,d,e,g,h){var i=l("autoNotify",!0),j={};!g&&a.event&&(g=a.event.errorCharacter),f(j),v=null,i&&!z&&n({name:h&&h.name||"window.onerror",message:c,file:d,lineNumber:e,columnNumber:g,stacktrace:h&&p(h)||o(),severity:"error"},j),b&&b(c,d,e,g,h)}});var L=function(a){return function(b,d){if("function"==typeof b){b=c(b);var e=Array.prototype.slice.call(arguments,2);return a(function(){b.apply(this,e)},d)}return a(b,d)}};t(a,"setTimeout",L),t(a,"setInterval",L),a.requestAnimationFrame&&t(a,"requestAnimationFrame",function(a){return function(b){return a(c(b))}}),a.setImmediate&&t(a,"setImmediate",function(a){return function(){var b=Array.prototype.slice.call(arguments);return b[0]=c(b[0]),a.apply(this,b)}}),"EventTarget Window Node ApplicationCache AudioTrackList ChannelMergerNode CryptoOperation EventSource FileReader HTMLUnknownElement IDBDatabase IDBRequest IDBTransaction KeyOperation MediaController MessagePort ModalWindow Notification SVGElementInstance Screen TextTrack TextTrackCue TextTrackList WebSocket WebSocketWorker Worker XMLHttpRequest XMLHttpRequestEventTarget XMLHttpRequestUpload".replace(/\w+/g,function(b){var d=a[b]&&a[b].prototype;d&&d.hasOwnProperty&&d.hasOwnProperty("addEventListener")&&(t(d,"addEventListener",function(a){return function(b,d,e,f){return d&&d.handleEvent&&(d.handleEvent=c(d.handleEvent,{eventHandler:!0})),a.call(this,b,c(d,{eventHandler:!0}),e,f)}}),t(d,"removeEventListener",function(a){return function(b,d,e,f){return a.call(this,b,d,e,f),a.call(this,b,c(d),e,f)}}))})}a.Bugsnag=x,"function"==typeof define&&define.amd?define([],function(){return x}):"object"==typeof module&&"object"==typeof module.exports&&(module.exports=x)}(window,window.Bugsnag);
 Bugsnag.apiKey = "2a86b308af5a81d2c9329fedfb4b30c7";
 Bugsnag.appVersion = "533fd1e8a09f55506eae5c1381271e3f4f6b08bf-1431536171";
@@ -391,21 +391,21 @@ var TSSSB = {
 
 				
 <!-- output_css "client_core" -->
-    <link href="./erika _ Blitzkrieg Slack_files/rollup-client_core.css" rel="stylesheet" type="text/css">
+    <link href="erika%20_%20Blitzkrieg%20Slack_files/rollup-client_core.css" rel="stylesheet" type="text/css">
 
 <!-- output_css "client_primary" -->
-    <link href="./erika _ Blitzkrieg Slack_files/rollup-client_primary.css" rel="stylesheet" type="text/css">
+    <link href="erika%20_%20Blitzkrieg%20Slack_files/rollup-client_primary.css" rel="stylesheet" type="text/css">
 
 <!-- output_css "client_general" -->
-    <link href="./erika _ Blitzkrieg Slack_files/rollup-client_general.css" rel="stylesheet" type="text/css">
+    <link href="erika%20_%20Blitzkrieg%20Slack_files/rollup-client_general.css" rel="stylesheet" type="text/css">
 
 
 <!-- output_css "client_secondary" -->
-    <link href="./erika _ Blitzkrieg Slack_files/rollup-client_secondary.css" rel="stylesheet" type="text/css">
+    <link href="erika%20_%20Blitzkrieg%20Slack_files/rollup-client_secondary.css" rel="stylesheet" type="text/css">
 
 
 <!-- output_css "regular" -->
-    <link href="./erika _ Blitzkrieg Slack_files/lato-1.css" rel="stylesheet" type="text/css">
+    <link href="erika%20_%20Blitzkrieg%20Slack_files/lato-1.css" rel="stylesheet" type="text/css">
 
 
 
@@ -568,7 +568,7 @@ setTimeout(function() {
 						<div id="search_container">
 				<form method="get" action="https://blitzkrieg.slack.com/search" id="header_search_form" class="search_form no_bottom_margin">
 			<div class="highlighter_wrapper"><input type="text" id="search_terms" name="q" class="search_input search_input_highlighted" placeholder="Search" autocomplete="off" value="" maxlength="250"><div class="highlighter_underlay" style="outline: rgb(85, 84, 89) none 0px; border-width: 1px; text-indent: 0px; font-size: 15px; line-height: 24px; font-family: Lato, appleLogo, sans-serif; letter-spacing: 0px; word-spacing: 0px; font-weight: 400; margin: 2px 30.3999996185303px; width: 130.200000762939px; top: 0px; left: 0px;"></div></div>
-	<i class="ts_icon ts_icon_search icon_search"></i>	<img class="icon_loading hidden" src="./erika _ Blitzkrieg Slack_files/loading.gif">
+	<i class="ts_icon ts_icon_search icon_search"></i>	<img class="icon_loading hidden" src="erika%20_%20Blitzkrieg%20Slack_files/loading.gif">
 	<a id="search_clear" class="icon_close client_header_icon"></a>
 <div class="popover_menu hidden" id="search_autocomplete_popover"><span class="arrow"></span><span class="arrow_shadow"></span><div id="autocomplete_menu" class="content"><div class="autocomplete_calendar hidden"><div class="pickmeup pmu-view-days" style="position: relative; display: inline-block;"><div class="pmu-instance"><nav><div class="pmu-prev pmu-button" style="visibility: visible;">◀</div><div class="pmu-month pmu-button">May 2015</div><div class="pmu-next pmu-button" style="visibility: hidden;">▶</div></nav><nav class="pmu-day-of-week"><div>Su</div><div>Mo</div><div>Tu</div><div>We</div><div>Th</div><div>Fr</div><div>Sa</div></nav><div class="pmu-years"><div class=" pmu-button">2009</div><div class=" pmu-button">2010</div><div class=" pmu-button">2011</div><div class=" pmu-button">2012</div><div class=" pmu-button">2013</div><div class=" pmu-button">2014</div><div class="pmu-selected pmu-button">2015</div><div class="pmu-disabled pmu-button">2016</div><div class="pmu-disabled pmu-button">2017</div><div class="pmu-disabled pmu-button">2018</div><div class="pmu-disabled pmu-button">2019</div><div class="pmu-disabled pmu-button">2020</div></div><div class="pmu-months"><div class=" pmu-button">Jan</div><div class=" pmu-button">Feb</div><div class=" pmu-button">Mar</div><div class=" pmu-button">Apr</div><div class="pmu-selected pmu-button">May</div><div class="pmu-disabled pmu-button">Jun</div><div class="pmu-disabled pmu-button">Jul</div><div class="pmu-disabled pmu-button">Aug</div><div class="pmu-disabled pmu-button">Sep</div><div class="pmu-disabled pmu-button">Oct</div><div class="pmu-disabled pmu-button">Nov</div><div class="pmu-disabled pmu-button">Dec</div></div><div class="pmu-days"><div class="pmu-not-in-month pmu-sunday pmu-button">26</div><div class="pmu-not-in-month pmu-button">27</div><div class="pmu-not-in-month pmu-button">28</div><div class="pmu-not-in-month pmu-button">29</div><div class="pmu-not-in-month pmu-button">30</div><div class=" pmu-button">1</div><div class="pmu-saturday pmu-button">2</div><div class="pmu-sunday pmu-button">3</div><div class=" pmu-button">4</div><div class=" pmu-button">5</div><div class=" pmu-button">6</div><div class=" pmu-button">7</div><div class=" pmu-button">8</div><div class="pmu-saturday pmu-button">9</div><div class="pmu-sunday pmu-button">10</div><div class=" pmu-button">11</div><div class=" pmu-button">12</div><div class="pmu-selected pmu-today pmu-button"><span class="pmu-today-border">13</span></div><div class="pmu-disabled pmu-button">14</div><div class="pmu-disabled pmu-button">15</div><div class="pmu-saturday pmu-disabled pmu-button">16</div><div class="pmu-sunday pmu-disabled pmu-button">17</div><div class="pmu-disabled pmu-button">18</div><div class="pmu-disabled pmu-button">19</div><div class="pmu-disabled pmu-button">20</div><div class="pmu-disabled pmu-button">21</div><div class="pmu-disabled pmu-button">22</div><div class="pmu-saturday pmu-disabled pmu-button">23</div><div class="pmu-sunday pmu-disabled pmu-button">24</div><div class="pmu-disabled pmu-button">25</div><div class="pmu-disabled pmu-button">26</div><div class="pmu-disabled pmu-button">27</div><div class="pmu-disabled pmu-button">28</div><div class="pmu-disabled pmu-button">29</div><div class="pmu-saturday pmu-disabled pmu-button">30</div><div class="pmu-sunday pmu-disabled pmu-button">31</div><div class="pmu-not-in-month pmu-disabled pmu-button">1</div><div class="pmu-not-in-month pmu-disabled pmu-button">2</div><div class="pmu-not-in-month pmu-disabled pmu-button">3</div><div class="pmu-not-in-month pmu-disabled pmu-button">4</div><div class="pmu-not-in-month pmu-disabled pmu-button">5</div><div class="pmu-not-in-month pmu-saturday pmu-disabled pmu-button">6</div></div></div></div></div><div id="" class="monkey_scroll_wrapper "><div class="monkey_scroll_bar "><div class="monkey_scroll_handle " style="left: -3px;">	<div class="monkey_scroll_handle_inner "></div></div></div><div class="monkey_scroll_hider "><div class="autocomplete_menu_scrollable monkey_scroller"><div></div></div></div></div></div></div></form>			</div>
 
@@ -596,7 +596,7 @@ setTimeout(function() {
 								<div id="messages-input-container" style="height: 41px;">
 					<form id="message-form" onsubmit="TS.view.submit(); return false;" style="height: 41px;">
 												<a class="emo_menu" aria-label="Emoji menu">
-							<img src="./erika _ Blitzkrieg Slack_files/emoji_menu_button.png" style="width: 16px; height: 16px;">
+							<img src="erika%20_%20Blitzkrieg%20Slack_files/emoji_menu_button.png" style="width: 16px; height: 16px;">
 						</a>
 						<textarea id="message-input" class="with-emoji-menu" maxlength="" aria-label="Message input for Direct message with erika" autocorrect="off" autocomplete="off" spellcheck="true" style="overflow-y: hidden; height: 38px;"></textarea>
 						<div id="message-input-message" class=""><span></span></div>
@@ -908,13 +908,13 @@ setTimeout(function() {
 									</div>
 									<div id="slackbot_meta" class="hidden">
 										<h1>Hi, Slackbot</h1>
-										<img src="./erika _ Blitzkrieg Slack_files/slackbot_48.png" alt="Slackbot" class="float_left small_left_margin" style="margin-top: 0.25rem;">
+										<img src="erika%20_%20Blitzkrieg%20Slack_files/slackbot_48.png" alt="Slackbot" class="float_left small_left_margin" style="margin-top: 0.25rem;">
 										<p class="icon_offset">This is <span class="not_limited_copy">the very beginning of</span> your message history with Slackbot. Slackbot is pretty dumb, but tries to be helpful.</p>
 										<div class="clear_both"></div>
 										<i class="ts_icon ts_icon_lightbulb_o callout"></i> 
 											<p class="icon_offset"><strong>Tip:</strong> Use this message area as your personal scratchpad: anything you type here is private just to you, but shows up in your personal search results. Great for notes, addresses, links or anything you want to keep track of.</p>
 										<i class="callout">
-											<a href="https://twitter.com/slackhq" target="new"><img src="./erika _ Blitzkrieg Slack_files/twitter_64.png" class="align_top"></a>
+											<a href="https://twitter.com/slackhq" target="new"><img src="erika%20_%20Blitzkrieg%20Slack_files/twitter_64.png" class="align_top"></a>
 										</i> 
 										<p class="icon_offset">
 											For more tips, along with news and announcements, follow our Twitter account <a href="https://twitter.com/slackhq" target="new" class="bold">@slackhq</a> and check out the <a href="https://twitter.com/search?f=realtime&q=%23changelog%20from%3Aslackhq&src=typd" target="new" class="bold">#changelog</a>.
@@ -936,7 +936,7 @@ setTimeout(function() {
 										<div id="welcome_slide_1" class="hidden welcome_slide">
 											<h1 style="color: #443642;" class="align_center no_padding">
 												Welcome to<br>
-												<img src="./erika _ Blitzkrieg Slack_files/landing_slack_hash_wordmark_logo.png" alt="Slack" id="welcome_slide_slack_logo">
+												<img src="erika%20_%20Blitzkrieg%20Slack_files/landing_slack_hash_wordmark_logo.png" alt="Slack" id="welcome_slide_slack_logo">
 											</h1>
 											
 																							<p>Slack brings all your team communication into one place, makes it all instantly searchable and available wherever you go.</p>
@@ -962,13 +962,13 @@ setTimeout(function() {
 											<p id="welcome_slide_app_icons" class="align_center">
 												<span class="column apple">
 													<a href="https://itunes.apple.com/app/slack-app/id618783545?ls=1&mt=8" target="new">
-														<img src="./erika _ Blitzkrieg Slack_files/ios-96.png" style="width: 48px; height: 48px;"><br>
+														<img src="erika%20_%20Blitzkrieg%20Slack_files/ios-96.png" style="width: 48px; height: 48px;"><br>
 														iOS
 													</a>
 												</span>
 												<span class="column android">
 													<a href="https://play.google.com/store/apps/details?id=com.Slack" target="new">
-														<img src="./erika _ Blitzkrieg Slack_files/android-xhdpi.png" style="width: 48px; height: 48px;"><br>
+														<img src="erika%20_%20Blitzkrieg%20Slack_files/android-xhdpi.png" style="width: 48px; height: 48px;"><br>
 														Android
 													</a>
 												</span>
@@ -1072,7 +1072,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362650000036" target="new_1431537132621" title="May 11th at 12:44:10 PMClick to open in archives" class="timestamp">12:44 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362650000036" target="new_1431537132621" title="May 11th at 12:44:10 PM
+Click to open in archives" class="timestamp">12:44 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -1160,7 +1161,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362712000037" target="new_1431537132621" title="May 11th at 12:45:12 PMClick to open in archives" class="timestamp">12:45 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362712000037" target="new_1431537132621" title="May 11th at 12:45:12 PM
+Click to open in archives" class="timestamp">12:45 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -1248,7 +1250,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[12:45 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362718000038" target="new_1431537132621" title="May 11th at 12:45:18 PMClick to open in archives" class="timestamp">12:45</a>
+					<i class="copy_only">[12:45 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362718000038" target="new_1431537132621" title="May 11th at 12:45:18 PM
+Click to open in archives" class="timestamp">12:45</a>
 				
 			
 			
@@ -1328,7 +1331,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[12:45 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362727000039" target="new_1431537132621" title="May 11th at 12:45:27 PMClick to open in archives" class="timestamp">12:45</a>
+					<i class="copy_only">[12:45 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362727000039" target="new_1431537132621" title="May 11th at 12:45:27 PM
+Click to open in archives" class="timestamp">12:45</a>
 				
 			
 			
@@ -1410,7 +1414,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362732000040" target="new_1431537132621" title="May 11th at 12:45:32 PMClick to open in archives" class="timestamp">12:45 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362732000040" target="new_1431537132621" title="May 11th at 12:45:32 PM
+Click to open in archives" class="timestamp">12:45 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -1498,7 +1503,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362738000041" target="new_1431537132621" title="May 11th at 12:45:38 PMClick to open in archives" class="timestamp">12:45 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362738000041" target="new_1431537132621" title="May 11th at 12:45:38 PM
+Click to open in archives" class="timestamp">12:45 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -1588,7 +1594,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362738000042" target="new_1431537132621" title="May 11th at 12:45:38 PMClick to open in archives" class="timestamp">12:45 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362738000042" target="new_1431537132621" title="May 11th at 12:45:38 PM
+Click to open in archives" class="timestamp">12:45 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -1676,7 +1683,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362747000043" target="new_1431537132621" title="May 11th at 12:45:47 PMClick to open in archives" class="timestamp">12:45 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431362747000043" target="new_1431537132621" title="May 11th at 12:45:47 PM
+Click to open in archives" class="timestamp">12:45 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -1766,7 +1774,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431363189000044" target="new_1431537132621" title="May 11th at 12:53:09 PMClick to open in archives" class="timestamp">12:53 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431363189000044" target="new_1431537132621" title="May 11th at 12:53:09 PM
+Click to open in archives" class="timestamp">12:53 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -1856,7 +1865,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[12:53 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431363197000045" target="new_1431537132621" title="May 11th at 12:53:17 PMClick to open in archives" class="timestamp">12:53</a>
+					<i class="copy_only">[12:53 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431363197000045" target="new_1431537132621" title="May 11th at 12:53:17 PM
+Click to open in archives" class="timestamp">12:53</a>
 				
 			
 			
@@ -1938,7 +1948,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[12:53 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431363212000046" target="new_1431537132621" title="May 11th at 12:53:32 PMClick to open in archives" class="timestamp">12:53</a>
+					<i class="copy_only">[12:53 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431363212000046" target="new_1431537132621" title="May 11th at 12:53:32 PM
+Click to open in archives" class="timestamp">12:53</a>
 				
 			
 			
@@ -2020,7 +2031,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431363539000047" target="new_1431537132621" title="May 11th at 12:58:59 PMClick to open in archives" class="timestamp">12:58 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431363539000047" target="new_1431537132621" title="May 11th at 12:58:59 PM
+Click to open in archives" class="timestamp">12:58 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -2110,7 +2122,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431363869000048" target="new_1431537132621" title="May 11th at 1:04:29 PMClick to open in archives" class="timestamp">1:04 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431363869000048" target="new_1431537132621" title="May 11th at 1:04:29 PM
+Click to open in archives" class="timestamp">1:04 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -2200,7 +2213,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:04 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431363881000049" target="new_1431537132621" title="May 11th at 1:04:41 PMClick to open in archives" class="timestamp">1:04</a>
+					<i class="copy_only">[1:04 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431363881000049" target="new_1431537132621" title="May 11th at 1:04:41 PM
+Click to open in archives" class="timestamp">1:04</a>
 				
 			
 			
@@ -2282,7 +2296,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:04 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431363890000050" target="new_1431537132621" title="May 11th at 1:04:50 PMClick to open in archives" class="timestamp">1:04</a>
+					<i class="copy_only">[1:04 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431363890000050" target="new_1431537132621" title="May 11th at 1:04:50 PM
+Click to open in archives" class="timestamp">1:04</a>
 				
 			
 			
@@ -2362,7 +2377,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364403000051" target="new_1431537132621" title="May 11th at 1:13:23 PMClick to open in archives" class="timestamp">1:13 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364403000051" target="new_1431537132621" title="May 11th at 1:13:23 PM
+Click to open in archives" class="timestamp">1:13 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -2452,7 +2468,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364514000052" target="new_1431537132621" title="May 11th at 1:15:14 PMClick to open in archives" class="timestamp">1:15 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364514000052" target="new_1431537132621" title="May 11th at 1:15:14 PM
+Click to open in archives" class="timestamp">1:15 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -2542,7 +2559,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:15 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364520000053" target="new_1431537132621" title="May 11th at 1:15:20 PMClick to open in archives" class="timestamp">1:15</a>
+					<i class="copy_only">[1:15 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364520000053" target="new_1431537132621" title="May 11th at 1:15:20 PM
+Click to open in archives" class="timestamp">1:15</a>
 				
 			
 			
@@ -2622,7 +2640,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364526000054" target="new_1431537132621" title="May 11th at 1:15:26 PMClick to open in archives" class="timestamp">1:15 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364526000054" target="new_1431537132621" title="May 11th at 1:15:26 PM
+Click to open in archives" class="timestamp">1:15 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -2712,7 +2731,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364528000055" target="new_1431537132621" title="May 11th at 1:15:28 PMClick to open in archives" class="timestamp">1:15 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364528000055" target="new_1431537132621" title="May 11th at 1:15:28 PM
+Click to open in archives" class="timestamp">1:15 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -2800,7 +2820,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364559000056" target="new_1431537132621" title="May 11th at 1:15:59 PMClick to open in archives" class="timestamp">1:15 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364559000056" target="new_1431537132621" title="May 11th at 1:15:59 PM
+Click to open in archives" class="timestamp">1:15 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -2890,7 +2911,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364572000057" target="new_1431537132621" title="May 11th at 1:16:12 PMClick to open in archives" class="timestamp">1:16 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364572000057" target="new_1431537132621" title="May 11th at 1:16:12 PM
+Click to open in archives" class="timestamp">1:16 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -2980,7 +3002,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:16 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364580000058" target="new_1431537132621" title="May 11th at 1:16:20 PMClick to open in archives" class="timestamp">1:16</a>
+					<i class="copy_only">[1:16 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364580000058" target="new_1431537132621" title="May 11th at 1:16:20 PM
+Click to open in archives" class="timestamp">1:16</a>
 				
 			
 			
@@ -3060,7 +3083,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364581000059" target="new_1431537132621" title="May 11th at 1:16:21 PMClick to open in archives" class="timestamp">1:16 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364581000059" target="new_1431537132621" title="May 11th at 1:16:21 PM
+Click to open in archives" class="timestamp">1:16 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -3150,7 +3174,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364584000060" target="new_1431537132621" title="May 11th at 1:16:24 PMClick to open in archives" class="timestamp">1:16 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364584000060" target="new_1431537132621" title="May 11th at 1:16:24 PM
+Click to open in archives" class="timestamp">1:16 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -3240,7 +3265,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:16 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364591000061" target="new_1431537132621" title="May 11th at 1:16:31 PMClick to open in archives" class="timestamp">1:16</a>
+					<i class="copy_only">[1:16 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364591000061" target="new_1431537132621" title="May 11th at 1:16:31 PM
+Click to open in archives" class="timestamp">1:16</a>
 				
 			
 			
@@ -3322,7 +3348,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:16 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364600000062" target="new_1431537132621" title="May 11th at 1:16:40 PMClick to open in archives" class="timestamp">1:16</a>
+					<i class="copy_only">[1:16 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364600000062" target="new_1431537132621" title="May 11th at 1:16:40 PM
+Click to open in archives" class="timestamp">1:16</a>
 				
 			
 			
@@ -3402,7 +3429,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364604000063" target="new_1431537132621" title="May 11th at 1:16:44 PMClick to open in archives" class="timestamp">1:16 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364604000063" target="new_1431537132621" title="May 11th at 1:16:44 PM
+Click to open in archives" class="timestamp">1:16 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -3492,7 +3520,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364608000064" target="new_1431537132621" title="May 11th at 1:16:48 PMClick to open in archives" class="timestamp">1:16 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364608000064" target="new_1431537132621" title="May 11th at 1:16:48 PM
+Click to open in archives" class="timestamp">1:16 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -3580,7 +3609,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364621000065" target="new_1431537132621" title="May 11th at 1:17:01 PMClick to open in archives" class="timestamp">1:17 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364621000065" target="new_1431537132621" title="May 11th at 1:17:01 PM
+Click to open in archives" class="timestamp">1:17 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -3670,7 +3700,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364625000066" target="new_1431537132621" title="May 11th at 1:17:05 PMClick to open in archives" class="timestamp">1:17 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364625000066" target="new_1431537132621" title="May 11th at 1:17:05 PM
+Click to open in archives" class="timestamp">1:17 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -3760,7 +3791,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:17 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364630000067" target="new_1431537132621" title="May 11th at 1:17:10 PMClick to open in archives" class="timestamp">1:17</a>
+					<i class="copy_only">[1:17 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364630000067" target="new_1431537132621" title="May 11th at 1:17:10 PM
+Click to open in archives" class="timestamp">1:17</a>
 				
 			
 			
@@ -3840,7 +3872,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364636000068" target="new_1431537132621" title="May 11th at 1:17:16 PMClick to open in archives" class="timestamp">1:17 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364636000068" target="new_1431537132621" title="May 11th at 1:17:16 PM
+Click to open in archives" class="timestamp">1:17 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -3928,7 +3961,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:17 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364638000069" target="new_1431537132621" title="May 11th at 1:17:18 PMClick to open in archives" class="timestamp">1:17</a>
+					<i class="copy_only">[1:17 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364638000069" target="new_1431537132621" title="May 11th at 1:17:18 PM
+Click to open in archives" class="timestamp">1:17</a>
 				
 			
 			
@@ -4008,7 +4042,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:17 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364642000070" target="new_1431537132621" title="May 11th at 1:17:22 PMClick to open in archives" class="timestamp">1:17</a>
+					<i class="copy_only">[1:17 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364642000070" target="new_1431537132621" title="May 11th at 1:17:22 PM
+Click to open in archives" class="timestamp">1:17</a>
 				
 			
 			
@@ -4088,7 +4123,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:17 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364647000071" target="new_1431537132621" title="May 11th at 1:17:27 PMClick to open in archives" class="timestamp">1:17</a>
+					<i class="copy_only">[1:17 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364647000071" target="new_1431537132621" title="May 11th at 1:17:27 PM
+Click to open in archives" class="timestamp">1:17</a>
 				
 			
 			
@@ -4168,7 +4204,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:17 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364653000072" target="new_1431537132621" title="May 11th at 1:17:33 PMClick to open in archives" class="timestamp">1:17</a>
+					<i class="copy_only">[1:17 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364653000072" target="new_1431537132621" title="May 11th at 1:17:33 PM
+Click to open in archives" class="timestamp">1:17</a>
 				
 			
 			
@@ -4248,7 +4285,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:17 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364657000073" target="new_1431537132621" title="May 11th at 1:17:37 PMClick to open in archives" class="timestamp">1:17</a>
+					<i class="copy_only">[1:17 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364657000073" target="new_1431537132621" title="May 11th at 1:17:37 PM
+Click to open in archives" class="timestamp">1:17</a>
 				
 			
 			
@@ -4328,7 +4366,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:17 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364661000074" target="new_1431537132621" title="May 11th at 1:17:41 PMClick to open in archives" class="timestamp">1:17</a>
+					<i class="copy_only">[1:17 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364661000074" target="new_1431537132621" title="May 11th at 1:17:41 PM
+Click to open in archives" class="timestamp">1:17</a>
 				
 			
 			
@@ -4410,7 +4449,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364666000075" target="new_1431537132621" title="May 11th at 1:17:46 PMClick to open in archives" class="timestamp">1:17 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364666000075" target="new_1431537132621" title="May 11th at 1:17:46 PM
+Click to open in archives" class="timestamp">1:17 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -4498,7 +4538,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364688000076" target="new_1431537132621" title="May 11th at 1:18:08 PMClick to open in archives" class="timestamp">1:18 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364688000076" target="new_1431537132621" title="May 11th at 1:18:08 PM
+Click to open in archives" class="timestamp">1:18 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -4586,7 +4627,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:18 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364706000077" target="new_1431537132621" title="May 11th at 1:18:26 PMClick to open in archives" class="timestamp">1:18</a>
+					<i class="copy_only">[1:18 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364706000077" target="new_1431537132621" title="May 11th at 1:18:26 PM
+Click to open in archives" class="timestamp">1:18</a>
 				
 			
 			
@@ -4666,7 +4708,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:18 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364710000078" target="new_1431537132621" title="May 11th at 1:18:30 PMClick to open in archives" class="timestamp">1:18</a>
+					<i class="copy_only">[1:18 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364710000078" target="new_1431537132621" title="May 11th at 1:18:30 PM
+Click to open in archives" class="timestamp">1:18</a>
 				
 			
 			
@@ -4746,7 +4789,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:18 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364737000079" target="new_1431537132621" title="May 11th at 1:18:57 PMClick to open in archives" class="timestamp">1:18</a>
+					<i class="copy_only">[1:18 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364737000079" target="new_1431537132621" title="May 11th at 1:18:57 PM
+Click to open in archives" class="timestamp">1:18</a>
 				
 			
 			
@@ -4826,7 +4870,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:19 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364746000080" target="new_1431537132621" title="May 11th at 1:19:06 PMClick to open in archives" class="timestamp">1:19</a>
+					<i class="copy_only">[1:19 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364746000080" target="new_1431537132621" title="May 11th at 1:19:06 PM
+Click to open in archives" class="timestamp">1:19</a>
 				
 			
 			
@@ -4906,7 +4951,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:19 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364753000081" target="new_1431537132621" title="May 11th at 1:19:13 PMClick to open in archives" class="timestamp">1:19</a>
+					<i class="copy_only">[1:19 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364753000081" target="new_1431537132621" title="May 11th at 1:19:13 PM
+Click to open in archives" class="timestamp">1:19</a>
 				
 			
 			
@@ -4988,7 +5034,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364769000082" target="new_1431537132621" title="May 11th at 1:19:29 PMClick to open in archives" class="timestamp">1:19 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364769000082" target="new_1431537132621" title="May 11th at 1:19:29 PM
+Click to open in archives" class="timestamp">1:19 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -5076,7 +5123,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364776000083" target="new_1431537132621" title="May 11th at 1:19:36 PMClick to open in archives" class="timestamp">1:19 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364776000083" target="new_1431537132621" title="May 11th at 1:19:36 PM
+Click to open in archives" class="timestamp">1:19 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -5164,7 +5212,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:19 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364778000084" target="new_1431537132621" title="May 11th at 1:19:38 PMClick to open in archives" class="timestamp">1:19</a>
+					<i class="copy_only">[1:19 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364778000084" target="new_1431537132621" title="May 11th at 1:19:38 PM
+Click to open in archives" class="timestamp">1:19</a>
 				
 			
 			
@@ -5246,7 +5295,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364785000085" target="new_1431537132621" title="May 11th at 1:19:45 PMClick to open in archives" class="timestamp">1:19 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364785000085" target="new_1431537132621" title="May 11th at 1:19:45 PM
+Click to open in archives" class="timestamp">1:19 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -5336,7 +5386,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:19 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364787000086" target="new_1431537132621" title="May 11th at 1:19:47 PMClick to open in archives" class="timestamp">1:19</a>
+					<i class="copy_only">[1:19 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364787000086" target="new_1431537132621" title="May 11th at 1:19:47 PM
+Click to open in archives" class="timestamp">1:19</a>
 				
 			
 			
@@ -5416,7 +5467,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364812000087" target="new_1431537132621" title="May 11th at 1:20:12 PMClick to open in archives" class="timestamp">1:20 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364812000087" target="new_1431537132621" title="May 11th at 1:20:12 PM
+Click to open in archives" class="timestamp">1:20 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -5506,7 +5558,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364822000088" target="new_1431537132621" title="May 11th at 1:20:22 PMClick to open in archives" class="timestamp">1:20 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364822000088" target="new_1431537132621" title="May 11th at 1:20:22 PM
+Click to open in archives" class="timestamp">1:20 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -5594,7 +5647,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364826000089" target="new_1431537132621" title="May 11th at 1:20:26 PMClick to open in archives" class="timestamp">1:20 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364826000089" target="new_1431537132621" title="May 11th at 1:20:26 PM
+Click to open in archives" class="timestamp">1:20 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -5682,7 +5736,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:21 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364865000090" target="new_1431537132621" title="May 11th at 1:21:05 PMClick to open in archives" class="timestamp">1:21</a>
+					<i class="copy_only">[1:21 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364865000090" target="new_1431537132621" title="May 11th at 1:21:05 PM
+Click to open in archives" class="timestamp">1:21</a>
 				
 			
 			
@@ -5762,7 +5817,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:21 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364873000091" target="new_1431537132621" title="May 11th at 1:21:13 PMClick to open in archives" class="timestamp">1:21</a>
+					<i class="copy_only">[1:21 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364873000091" target="new_1431537132621" title="May 11th at 1:21:13 PM
+Click to open in archives" class="timestamp">1:21</a>
 				
 			
 			
@@ -5844,7 +5900,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364873000092" target="new_1431537132621" title="May 11th at 1:21:13 PMClick to open in archives" class="timestamp">1:21 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364873000092" target="new_1431537132621" title="May 11th at 1:21:13 PM
+Click to open in archives" class="timestamp">1:21 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -5934,7 +5991,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:21 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364885000093" target="new_1431537132621" title="May 11th at 1:21:25 PMClick to open in archives" class="timestamp">1:21</a>
+					<i class="copy_only">[1:21 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364885000093" target="new_1431537132621" title="May 11th at 1:21:25 PM
+Click to open in archives" class="timestamp">1:21</a>
 				
 			
 			
@@ -6014,7 +6072,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364893000094" target="new_1431537132621" title="May 11th at 1:21:33 PMClick to open in archives" class="timestamp">1:21 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364893000094" target="new_1431537132621" title="May 11th at 1:21:33 PM
+Click to open in archives" class="timestamp">1:21 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -6102,7 +6161,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:21 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364900000095" target="new_1431537132621" title="May 11th at 1:21:40 PMClick to open in archives" class="timestamp">1:21</a>
+					<i class="copy_only">[1:21 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364900000095" target="new_1431537132621" title="May 11th at 1:21:40 PM
+Click to open in archives" class="timestamp">1:21</a>
 				
 			
 			
@@ -6182,7 +6242,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:21 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364918000096" target="new_1431537132621" title="May 11th at 1:21:58 PMClick to open in archives" class="timestamp">1:21</a>
+					<i class="copy_only">[1:21 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364918000096" target="new_1431537132621" title="May 11th at 1:21:58 PM
+Click to open in archives" class="timestamp">1:21</a>
 				
 			
 			
@@ -6262,7 +6323,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:22 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364928000097" target="new_1431537132621" title="May 11th at 1:22:08 PMClick to open in archives" class="timestamp">1:22</a>
+					<i class="copy_only">[1:22 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364928000097" target="new_1431537132621" title="May 11th at 1:22:08 PM
+Click to open in archives" class="timestamp">1:22</a>
 				
 			
 			
@@ -6344,7 +6406,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364928000098" target="new_1431537132621" title="May 11th at 1:22:08 PMClick to open in archives" class="timestamp">1:22 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364928000098" target="new_1431537132621" title="May 11th at 1:22:08 PM
+Click to open in archives" class="timestamp">1:22 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -6432,7 +6495,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364960000099" target="new_1431537132621" title="May 11th at 1:22:40 PMClick to open in archives" class="timestamp">1:22 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364960000099" target="new_1431537132621" title="May 11th at 1:22:40 PM
+Click to open in archives" class="timestamp">1:22 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -6520,7 +6584,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:22 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364973000100" target="new_1431537132621" title="May 11th at 1:22:53 PMClick to open in archives" class="timestamp">1:22</a>
+					<i class="copy_only">[1:22 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364973000100" target="new_1431537132621" title="May 11th at 1:22:53 PM
+Click to open in archives" class="timestamp">1:22</a>
 				
 			
 			
@@ -6600,7 +6665,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:23 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364986000101" target="new_1431537132621" title="May 11th at 1:23:06 PMClick to open in archives" class="timestamp">1:23</a>
+					<i class="copy_only">[1:23 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431364986000101" target="new_1431537132621" title="May 11th at 1:23:06 PM
+Click to open in archives" class="timestamp">1:23</a>
 				
 			
 			
@@ -6680,7 +6746,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:23 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365009000102" target="new_1431537132621" title="May 11th at 1:23:29 PMClick to open in archives" class="timestamp">1:23</a>
+					<i class="copy_only">[1:23 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365009000102" target="new_1431537132621" title="May 11th at 1:23:29 PM
+Click to open in archives" class="timestamp">1:23</a>
 				
 			
 			
@@ -6760,7 +6827,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:23 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365039000103" target="new_1431537132621" title="May 11th at 1:23:59 PMClick to open in archives" class="timestamp">1:23</a>
+					<i class="copy_only">[1:23 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365039000103" target="new_1431537132621" title="May 11th at 1:23:59 PM
+Click to open in archives" class="timestamp">1:23</a>
 				
 			
 			
@@ -6840,7 +6908,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:24 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365049000104" target="new_1431537132621" title="May 11th at 1:24:09 PMClick to open in archives" class="timestamp">1:24</a>
+					<i class="copy_only">[1:24 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365049000104" target="new_1431537132621" title="May 11th at 1:24:09 PM
+Click to open in archives" class="timestamp">1:24</a>
 				
 			
 			
@@ -6920,7 +6989,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:24 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365062000105" target="new_1431537132621" title="May 11th at 1:24:22 PMClick to open in archives" class="timestamp">1:24</a>
+					<i class="copy_only">[1:24 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365062000105" target="new_1431537132621" title="May 11th at 1:24:22 PM
+Click to open in archives" class="timestamp">1:24</a>
 				
 			
 			
@@ -7000,7 +7070,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:25 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365100000106" target="new_1431537132621" title="May 11th at 1:25:00 PMClick to open in archives" class="timestamp">1:25</a>
+					<i class="copy_only">[1:25 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365100000106" target="new_1431537132621" title="May 11th at 1:25:00 PM
+Click to open in archives" class="timestamp">1:25</a>
 				
 			
 			
@@ -7080,7 +7151,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:25 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365104000107" target="new_1431537132621" title="May 11th at 1:25:04 PMClick to open in archives" class="timestamp">1:25</a>
+					<i class="copy_only">[1:25 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365104000107" target="new_1431537132621" title="May 11th at 1:25:04 PM
+Click to open in archives" class="timestamp">1:25</a>
 				
 			
 			
@@ -7160,7 +7232,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:26 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365179000108" target="new_1431537132621" title="May 11th at 1:26:19 PMClick to open in archives" class="timestamp">1:26</a>
+					<i class="copy_only">[1:26 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365179000108" target="new_1431537132621" title="May 11th at 1:26:19 PM
+Click to open in archives" class="timestamp">1:26</a>
 				
 			
 			
@@ -7240,7 +7313,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:26 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365187000109" target="new_1431537132621" title="May 11th at 1:26:27 PMClick to open in archives" class="timestamp">1:26</a>
+					<i class="copy_only">[1:26 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365187000109" target="new_1431537132621" title="May 11th at 1:26:27 PM
+Click to open in archives" class="timestamp">1:26</a>
 				
 			
 			
@@ -7320,7 +7394,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:26 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365209000110" target="new_1431537132621" title="May 11th at 1:26:49 PMClick to open in archives" class="timestamp">1:26</a>
+					<i class="copy_only">[1:26 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365209000110" target="new_1431537132621" title="May 11th at 1:26:49 PM
+Click to open in archives" class="timestamp">1:26</a>
 				
 			
 			
@@ -7400,7 +7475,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:27 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365262000111" target="new_1431537132621" title="May 11th at 1:27:42 PMClick to open in archives" class="timestamp">1:27</a>
+					<i class="copy_only">[1:27 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365262000111" target="new_1431537132621" title="May 11th at 1:27:42 PM
+Click to open in archives" class="timestamp">1:27</a>
 				
 			
 			
@@ -7480,7 +7556,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:30 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365415000112" target="new_1431537132621" title="May 11th at 1:30:15 PMClick to open in archives" class="timestamp">1:30</a>
+					<i class="copy_only">[1:30 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365415000112" target="new_1431537132621" title="May 11th at 1:30:15 PM
+Click to open in archives" class="timestamp">1:30</a>
 				
 			
 			
@@ -7560,7 +7637,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:30 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365418000113" target="new_1431537132621" title="May 11th at 1:30:18 PMClick to open in archives" class="timestamp">1:30</a>
+					<i class="copy_only">[1:30 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365418000113" target="new_1431537132621" title="May 11th at 1:30:18 PM
+Click to open in archives" class="timestamp">1:30</a>
 				
 			
 			
@@ -7640,7 +7718,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:30 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365428000114" target="new_1431537132621" title="May 11th at 1:30:28 PMClick to open in archives" class="timestamp">1:30</a>
+					<i class="copy_only">[1:30 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365428000114" target="new_1431537132621" title="May 11th at 1:30:28 PM
+Click to open in archives" class="timestamp">1:30</a>
 				
 			
 			
@@ -7720,7 +7799,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:30 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365437000115" target="new_1431537132621" title="May 11th at 1:30:37 PMClick to open in archives" class="timestamp">1:30</a>
+					<i class="copy_only">[1:30 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365437000115" target="new_1431537132621" title="May 11th at 1:30:37 PM
+Click to open in archives" class="timestamp">1:30</a>
 				
 			
 			
@@ -7768,7 +7848,8 @@ setTimeout(function() {
 			<a href="https://blitzkrieg.slack.com/team/julie_gabler" target="/team/julie_gabler" class="member color_U03NRT6M6 message_sender" data-member-id="U03NRT6M6">julie_gabler</a>
 			
 			
-				<i class="copy_only"><br>[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365570000116" target="new_1431537132621" title="May 11th at 1:32:50 PMClick to open in archives" class="timestamp">1:32 PM</a><i class="copy_only">]</i>
+				<i class="copy_only"><br>[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365570000116" target="new_1431537132621" title="May 11th at 1:32:50 PM
+Click to open in archives" class="timestamp">1:32 PM</a><i class="copy_only">]</i>
 			
 			
 			<span class="message_star_holder"><span data-file-id="F04QZUR93" class="star ts_icon ts_icon_star ts_icon_inherit star_file"></span></span><br>	
@@ -7878,7 +7959,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365620000117" target="new_1431537132621" title="May 11th at 1:33:40 PMClick to open in archives" class="timestamp">1:33 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365620000117" target="new_1431537132621" title="May 11th at 1:33:40 PM
+Click to open in archives" class="timestamp">1:33 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -7966,7 +8048,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:33 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365627000118" target="new_1431537132621" title="May 11th at 1:33:47 PMClick to open in archives" class="timestamp">1:33</a>
+					<i class="copy_only">[1:33 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365627000118" target="new_1431537132621" title="May 11th at 1:33:47 PM
+Click to open in archives" class="timestamp">1:33</a>
 				
 			
 			
@@ -8048,7 +8131,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365680000119" target="new_1431537132621" title="May 11th at 1:34:40 PMClick to open in archives" class="timestamp">1:34 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365680000119" target="new_1431537132621" title="May 11th at 1:34:40 PM
+Click to open in archives" class="timestamp">1:34 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -8138,7 +8222,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:36 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365803000120" target="new_1431537132621" title="May 11th at 1:36:43 PMClick to open in archives" class="timestamp">1:36</a>
+					<i class="copy_only">[1:36 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365803000120" target="new_1431537132621" title="May 11th at 1:36:43 PM
+Click to open in archives" class="timestamp">1:36</a>
 				
 			
 			
@@ -8218,7 +8303,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365822000121" target="new_1431537132621" title="May 11th at 1:37:02 PMClick to open in archives" class="timestamp">1:37 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365822000121" target="new_1431537132621" title="May 11th at 1:37:02 PM
+Click to open in archives" class="timestamp">1:37 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -8306,7 +8392,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:37 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365826000122" target="new_1431537132621" title="May 11th at 1:37:06 PMClick to open in archives" class="timestamp">1:37</a>
+					<i class="copy_only">[1:37 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431365826000122" target="new_1431537132621" title="May 11th at 1:37:06 PM
+Click to open in archives" class="timestamp">1:37</a>
 				
 			
 			
@@ -8388,7 +8475,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366135000123" target="new_1431537132621" title="May 11th at 1:42:15 PMClick to open in archives" class="timestamp">1:42 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366135000123" target="new_1431537132621" title="May 11th at 1:42:15 PM
+Click to open in archives" class="timestamp">1:42 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -8478,7 +8566,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:42 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366148000124" target="new_1431537132621" title="May 11th at 1:42:28 PMClick to open in archives" class="timestamp">1:42</a>
+					<i class="copy_only">[1:42 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366148000124" target="new_1431537132621" title="May 11th at 1:42:28 PM
+Click to open in archives" class="timestamp">1:42</a>
 				
 			
 			
@@ -8560,7 +8649,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:46 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366373000125" target="new_1431537132621" title="May 11th at 1:46:13 PMClick to open in archives" class="timestamp">1:46</a>
+					<i class="copy_only">[1:46 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366373000125" target="new_1431537132621" title="May 11th at 1:46:13 PM
+Click to open in archives" class="timestamp">1:46</a>
 				
 			
 			
@@ -8642,7 +8732,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:46 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366380000126" target="new_1431537132621" title="May 11th at 1:46:20 PMClick to open in archives" class="timestamp">1:46</a>
+					<i class="copy_only">[1:46 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366380000126" target="new_1431537132621" title="May 11th at 1:46:20 PM
+Click to open in archives" class="timestamp">1:46</a>
 				
 			
 			
@@ -8722,7 +8813,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366486000127" target="new_1431537132621" title="May 11th at 1:48:06 PMClick to open in archives" class="timestamp">1:48 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366486000127" target="new_1431537132621" title="May 11th at 1:48:06 PM
+Click to open in archives" class="timestamp">1:48 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -8812,7 +8904,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366494000128" target="new_1431537132621" title="May 11th at 1:48:14 PMClick to open in archives" class="timestamp">1:48 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366494000128" target="new_1431537132621" title="May 11th at 1:48:14 PM
+Click to open in archives" class="timestamp">1:48 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -8900,7 +8993,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366647000129" target="new_1431537132621" title="May 11th at 1:50:47 PMClick to open in archives" class="timestamp">1:50 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366647000129" target="new_1431537132621" title="May 11th at 1:50:47 PM
+Click to open in archives" class="timestamp">1:50 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -8988,7 +9082,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:51 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366664000130" target="new_1431537132621" title="May 11th at 1:51:04 PMClick to open in archives" class="timestamp">1:51</a>
+					<i class="copy_only">[1:51 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366664000130" target="new_1431537132621" title="May 11th at 1:51:04 PM
+Click to open in archives" class="timestamp">1:51</a>
 				
 			
 			
@@ -9070,7 +9165,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366688000131" target="new_1431537132621" title="May 11th at 1:51:28 PMClick to open in archives" class="timestamp">1:51 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366688000131" target="new_1431537132621" title="May 11th at 1:51:28 PM
+Click to open in archives" class="timestamp">1:51 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -9158,7 +9254,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366691000132" target="new_1431537132621" title="May 11th at 1:51:31 PMClick to open in archives" class="timestamp">1:51 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366691000132" target="new_1431537132621" title="May 11th at 1:51:31 PM
+Click to open in archives" class="timestamp">1:51 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -9246,7 +9343,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:51 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366695000133" target="new_1431537132621" title="May 11th at 1:51:35 PMClick to open in archives" class="timestamp">1:51</a>
+					<i class="copy_only">[1:51 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366695000133" target="new_1431537132621" title="May 11th at 1:51:35 PM
+Click to open in archives" class="timestamp">1:51</a>
 				
 			
 			
@@ -9326,7 +9424,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:51 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366701000134" target="new_1431537132621" title="May 11th at 1:51:41 PMClick to open in archives" class="timestamp">1:51</a>
+					<i class="copy_only">[1:51 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366701000134" target="new_1431537132621" title="May 11th at 1:51:41 PM
+Click to open in archives" class="timestamp">1:51</a>
 				
 			
 			
@@ -9408,7 +9507,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366707000135" target="new_1431537132621" title="May 11th at 1:51:47 PMClick to open in archives" class="timestamp">1:51 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366707000135" target="new_1431537132621" title="May 11th at 1:51:47 PM
+Click to open in archives" class="timestamp">1:51 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -9498,7 +9598,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:51 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366712000136" target="new_1431537132621" title="May 11th at 1:51:52 PMClick to open in archives" class="timestamp">1:51</a>
+					<i class="copy_only">[1:51 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366712000136" target="new_1431537132621" title="May 11th at 1:51:52 PM
+Click to open in archives" class="timestamp">1:51</a>
 				
 			
 			
@@ -9578,7 +9679,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366729000137" target="new_1431537132621" title="May 11th at 1:52:09 PMClick to open in archives" class="timestamp">1:52 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366729000137" target="new_1431537132621" title="May 11th at 1:52:09 PM
+Click to open in archives" class="timestamp">1:52 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -9666,7 +9768,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:52 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366746000138" target="new_1431537132621" title="May 11th at 1:52:26 PMClick to open in archives" class="timestamp">1:52</a>
+					<i class="copy_only">[1:52 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366746000138" target="new_1431537132621" title="May 11th at 1:52:26 PM
+Click to open in archives" class="timestamp">1:52</a>
 				
 			
 			
@@ -9746,7 +9849,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:52 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366748000139" target="new_1431537132621" title="May 11th at 1:52:28 PMClick to open in archives" class="timestamp">1:52</a>
+					<i class="copy_only">[1:52 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366748000139" target="new_1431537132621" title="May 11th at 1:52:28 PM
+Click to open in archives" class="timestamp">1:52</a>
 				
 			
 			
@@ -9826,7 +9930,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:52 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366753000140" target="new_1431537132621" title="May 11th at 1:52:33 PMClick to open in archives" class="timestamp">1:52</a>
+					<i class="copy_only">[1:52 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366753000140" target="new_1431537132621" title="May 11th at 1:52:33 PM
+Click to open in archives" class="timestamp">1:52</a>
 				
 			
 			
@@ -9908,7 +10013,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366766000141" target="new_1431537132621" title="May 11th at 1:52:46 PMClick to open in archives" class="timestamp">1:52 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366766000141" target="new_1431537132621" title="May 11th at 1:52:46 PM
+Click to open in archives" class="timestamp">1:52 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -9996,7 +10102,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366768000142" target="new_1431537132621" title="May 11th at 1:52:48 PMClick to open in archives" class="timestamp">1:52 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366768000142" target="new_1431537132621" title="May 11th at 1:52:48 PM
+Click to open in archives" class="timestamp">1:52 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -10084,7 +10191,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:53 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366780000143" target="new_1431537132621" title="May 11th at 1:53:00 PMClick to open in archives" class="timestamp">1:53</a>
+					<i class="copy_only">[1:53 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366780000143" target="new_1431537132621" title="May 11th at 1:53:00 PM
+Click to open in archives" class="timestamp">1:53</a>
 				
 			
 			
@@ -10164,7 +10272,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:55 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366936000144" target="new_1431537132621" title="May 11th at 1:55:36 PMClick to open in archives" class="timestamp">1:55</a>
+					<i class="copy_only">[1:55 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366936000144" target="new_1431537132621" title="May 11th at 1:55:36 PM
+Click to open in archives" class="timestamp">1:55</a>
 				
 			
 			
@@ -10244,7 +10353,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:55 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366938000145" target="new_1431537132621" title="May 11th at 1:55:38 PMClick to open in archives" class="timestamp">1:55</a>
+					<i class="copy_only">[1:55 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431366938000145" target="new_1431537132621" title="May 11th at 1:55:38 PM
+Click to open in archives" class="timestamp">1:55</a>
 				
 			
 			
@@ -10326,7 +10436,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367055000146" target="new_1431537132621" title="May 11th at 1:57:35 PMClick to open in archives" class="timestamp">1:57 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367055000146" target="new_1431537132621" title="May 11th at 1:57:35 PM
+Click to open in archives" class="timestamp">1:57 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -10416,7 +10527,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:57 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367060000147" target="new_1431537132621" title="May 11th at 1:57:40 PMClick to open in archives" class="timestamp">1:57</a>
+					<i class="copy_only">[1:57 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367060000147" target="new_1431537132621" title="May 11th at 1:57:40 PM
+Click to open in archives" class="timestamp">1:57</a>
 				
 			
 			
@@ -10498,7 +10610,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:57 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367068000148" target="new_1431537132621" title="May 11th at 1:57:48 PMClick to open in archives" class="timestamp">1:57</a>
+					<i class="copy_only">[1:57 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367068000148" target="new_1431537132621" title="May 11th at 1:57:48 PM
+Click to open in archives" class="timestamp">1:57</a>
 				
 			
 			
@@ -10580,7 +10693,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:57 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367071000149" target="new_1431537132621" title="May 11th at 1:57:51 PMClick to open in archives" class="timestamp">1:57</a>
+					<i class="copy_only">[1:57 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367071000149" target="new_1431537132621" title="May 11th at 1:57:51 PM
+Click to open in archives" class="timestamp">1:57</a>
 				
 			
 			
@@ -10662,7 +10776,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:57 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367076000150" target="new_1431537132621" title="May 11th at 1:57:56 PMClick to open in archives" class="timestamp">1:57</a>
+					<i class="copy_only">[1:57 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367076000150" target="new_1431537132621" title="May 11th at 1:57:56 PM
+Click to open in archives" class="timestamp">1:57</a>
 				
 			
 			
@@ -10744,7 +10859,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:58 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367091000151" target="new_1431537132621" title="May 11th at 1:58:11 PMClick to open in archives" class="timestamp">1:58</a>
+					<i class="copy_only">[1:58 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367091000151" target="new_1431537132621" title="May 11th at 1:58:11 PM
+Click to open in archives" class="timestamp">1:58</a>
 				
 			
 			
@@ -10824,7 +10940,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367096000152" target="new_1431537132621" title="May 11th at 1:58:16 PMClick to open in archives" class="timestamp">1:58 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367096000152" target="new_1431537132621" title="May 11th at 1:58:16 PM
+Click to open in archives" class="timestamp">1:58 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -10912,7 +11029,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:58 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367100000153" target="new_1431537132621" title="May 11th at 1:58:20 PMClick to open in archives" class="timestamp">1:58</a>
+					<i class="copy_only">[1:58 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367100000153" target="new_1431537132621" title="May 11th at 1:58:20 PM
+Click to open in archives" class="timestamp">1:58</a>
 				
 			
 			
@@ -10994,7 +11112,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367116000154" target="new_1431537132621" title="May 11th at 1:58:36 PMClick to open in archives" class="timestamp">1:58 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367116000154" target="new_1431537132621" title="May 11th at 1:58:36 PM
+Click to open in archives" class="timestamp">1:58 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -11082,7 +11201,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367132000155" target="new_1431537132621" title="May 11th at 1:58:52 PMClick to open in archives" class="timestamp">1:58 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367132000155" target="new_1431537132621" title="May 11th at 1:58:52 PM
+Click to open in archives" class="timestamp">1:58 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -11170,7 +11290,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:58 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367135000156" target="new_1431537132621" title="May 11th at 1:58:55 PMClick to open in archives" class="timestamp">1:58</a>
+					<i class="copy_only">[1:58 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367135000156" target="new_1431537132621" title="May 11th at 1:58:55 PM
+Click to open in archives" class="timestamp">1:58</a>
 				
 			
 			
@@ -11252,7 +11373,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367141000157" target="new_1431537132621" title="May 11th at 1:59:01 PMClick to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367141000157" target="new_1431537132621" title="May 11th at 1:59:01 PM
+Click to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -11340,7 +11462,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367148000158" target="new_1431537132621" title="May 11th at 1:59:08 PMClick to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367148000158" target="new_1431537132621" title="May 11th at 1:59:08 PM
+Click to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -11430,7 +11553,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367151000159" target="new_1431537132621" title="May 11th at 1:59:11 PMClick to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367151000159" target="new_1431537132621" title="May 11th at 1:59:11 PM
+Click to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -11520,7 +11644,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:59 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367158000160" target="new_1431537132621" title="May 11th at 1:59:18 PMClick to open in archives" class="timestamp">1:59</a>
+					<i class="copy_only">[1:59 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367158000160" target="new_1431537132621" title="May 11th at 1:59:18 PM
+Click to open in archives" class="timestamp">1:59</a>
 				
 			
 			
@@ -11600,7 +11725,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367164000161" target="new_1431537132621" title="May 11th at 1:59:24 PMClick to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367164000161" target="new_1431537132621" title="May 11th at 1:59:24 PM
+Click to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -11690,7 +11816,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367170000162" target="new_1431537132621" title="May 11th at 1:59:30 PMClick to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367170000162" target="new_1431537132621" title="May 11th at 1:59:30 PM
+Click to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -11778,7 +11905,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367182000163" target="new_1431537132621" title="May 11th at 1:59:42 PMClick to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367182000163" target="new_1431537132621" title="May 11th at 1:59:42 PM
+Click to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -11868,7 +11996,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367184000164" target="new_1431537132621" title="May 11th at 1:59:44 PMClick to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367184000164" target="new_1431537132621" title="May 11th at 1:59:44 PM
+Click to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -11956,7 +12085,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367188000165" target="new_1431537132621" title="May 11th at 1:59:48 PMClick to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367188000165" target="new_1431537132621" title="May 11th at 1:59:48 PM
+Click to open in archives" class="timestamp">1:59 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -12044,7 +12174,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:00 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367212000166" target="new_1431537132621" title="May 11th at 2:00:12 PMClick to open in archives" class="timestamp">2:00</a>
+					<i class="copy_only">[2:00 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367212000166" target="new_1431537132621" title="May 11th at 2:00:12 PM
+Click to open in archives" class="timestamp">2:00</a>
 				
 			
 			
@@ -12126,7 +12257,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367224000167" target="new_1431537132621" title="May 11th at 2:00:24 PMClick to open in archives" class="timestamp">2:00 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367224000167" target="new_1431537132621" title="May 11th at 2:00:24 PM
+Click to open in archives" class="timestamp">2:00 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -12216,7 +12348,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:00 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367239000168" target="new_1431537132621" title="May 11th at 2:00:39 PMClick to open in archives" class="timestamp">2:00</a>
+					<i class="copy_only">[2:00 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367239000168" target="new_1431537132621" title="May 11th at 2:00:39 PM
+Click to open in archives" class="timestamp">2:00</a>
 				
 			
 			
@@ -12296,7 +12429,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367260000169" target="new_1431537132621" title="May 11th at 2:01:00 PMClick to open in archives" class="timestamp">2:01 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367260000169" target="new_1431537132621" title="May 11th at 2:01:00 PM
+Click to open in archives" class="timestamp">2:01 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -12384,7 +12518,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:01 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367273000170" target="new_1431537132621" title="May 11th at 2:01:13 PMClick to open in archives" class="timestamp">2:01</a>
+					<i class="copy_only">[2:01 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367273000170" target="new_1431537132621" title="May 11th at 2:01:13 PM
+Click to open in archives" class="timestamp">2:01</a>
 				
 			
 			
@@ -12466,7 +12601,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367282000171" target="new_1431537132621" title="May 11th at 2:01:22 PMClick to open in archives" class="timestamp">2:01 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367282000171" target="new_1431537132621" title="May 11th at 2:01:22 PM
+Click to open in archives" class="timestamp">2:01 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -12556,7 +12692,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:01 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367285000172" target="new_1431537132621" title="May 11th at 2:01:25 PMClick to open in archives" class="timestamp">2:01</a>
+					<i class="copy_only">[2:01 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367285000172" target="new_1431537132621" title="May 11th at 2:01:25 PM
+Click to open in archives" class="timestamp">2:01</a>
 				
 			
 			
@@ -12636,7 +12773,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367287000173" target="new_1431537132621" title="May 11th at 2:01:27 PMClick to open in archives" class="timestamp">2:01 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367287000173" target="new_1431537132621" title="May 11th at 2:01:27 PM
+Click to open in archives" class="timestamp">2:01 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -12724,7 +12862,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:01 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367292000174" target="new_1431537132621" title="May 11th at 2:01:32 PMClick to open in archives" class="timestamp">2:01</a>
+					<i class="copy_only">[2:01 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367292000174" target="new_1431537132621" title="May 11th at 2:01:32 PM
+Click to open in archives" class="timestamp">2:01</a>
 				
 			
 			
@@ -12806,7 +12945,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367308000175" target="new_1431537132621" title="May 11th at 2:01:48 PMClick to open in archives" class="timestamp">2:01 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367308000175" target="new_1431537132621" title="May 11th at 2:01:48 PM
+Click to open in archives" class="timestamp">2:01 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -12894,7 +13034,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367318000176" target="new_1431537132621" title="May 11th at 2:01:58 PMClick to open in archives" class="timestamp">2:01 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367318000176" target="new_1431537132621" title="May 11th at 2:01:58 PM
+Click to open in archives" class="timestamp">2:01 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -12984,7 +13125,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367328000177" target="new_1431537132621" title="May 11th at 2:02:08 PMClick to open in archives" class="timestamp">2:02 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367328000177" target="new_1431537132621" title="May 11th at 2:02:08 PM
+Click to open in archives" class="timestamp">2:02 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -13072,7 +13214,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367335000178" target="new_1431537132621" title="May 11th at 2:02:15 PMClick to open in archives" class="timestamp">2:02 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367335000178" target="new_1431537132621" title="May 11th at 2:02:15 PM
+Click to open in archives" class="timestamp">2:02 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -13160,7 +13303,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:02 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367347000179" target="new_1431537132621" title="May 11th at 2:02:27 PMClick to open in archives" class="timestamp">2:02</a>
+					<i class="copy_only">[2:02 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367347000179" target="new_1431537132621" title="May 11th at 2:02:27 PM
+Click to open in archives" class="timestamp">2:02</a>
 				
 			
 			
@@ -13242,7 +13386,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367357000180" target="new_1431537132621" title="May 11th at 2:02:37 PMClick to open in archives" class="timestamp">2:02 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367357000180" target="new_1431537132621" title="May 11th at 2:02:37 PM
+Click to open in archives" class="timestamp">2:02 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -13330,7 +13475,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367363000181" target="new_1431537132621" title="May 11th at 2:02:43 PMClick to open in archives" class="timestamp">2:02 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431367363000181" target="new_1431537132621" title="May 11th at 2:02:43 PM
+Click to open in archives" class="timestamp">2:02 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -13420,7 +13566,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371597000002" target="new_1431537132621" title="May 11th at 3:13:17 PMClick to open in archives" class="timestamp">3:13 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371597000002" target="new_1431537132621" title="May 11th at 3:13:17 PM
+Click to open in archives" class="timestamp">3:13 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -13510,7 +13657,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[3:13 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371607000003" target="new_1431537132621" title="May 11th at 3:13:27 PMClick to open in archives" class="timestamp">3:13</a>
+					<i class="copy_only">[3:13 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371607000003" target="new_1431537132621" title="May 11th at 3:13:27 PM
+Click to open in archives" class="timestamp">3:13</a>
 				
 			
 			
@@ -13592,7 +13740,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[3:14 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371671000004" target="new_1431537132621" title="May 11th at 3:14:31 PMClick to open in archives" class="timestamp">3:14</a>
+					<i class="copy_only">[3:14 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371671000004" target="new_1431537132621" title="May 11th at 3:14:31 PM
+Click to open in archives" class="timestamp">3:14</a>
 				
 			
 			
@@ -13674,7 +13823,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[3:14 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371683000005" target="new_1431537132621" title="May 11th at 3:14:43 PMClick to open in archives" class="timestamp">3:14</a>
+					<i class="copy_only">[3:14 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371683000005" target="new_1431537132621" title="May 11th at 3:14:43 PM
+Click to open in archives" class="timestamp">3:14</a>
 				
 			
 			
@@ -13756,7 +13906,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[3:15 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371702000006" target="new_1431537132621" title="May 11th at 3:15:02 PMClick to open in archives" class="timestamp">3:15</a>
+					<i class="copy_only">[3:15 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371702000006" target="new_1431537132621" title="May 11th at 3:15:02 PM
+Click to open in archives" class="timestamp">3:15</a>
 				
 			
 			
@@ -13838,7 +13989,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[3:15 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371740000007" target="new_1431537132621" title="May 11th at 3:15:40 PMClick to open in archives" class="timestamp">3:15</a>
+					<i class="copy_only">[3:15 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371740000007" target="new_1431537132621" title="May 11th at 3:15:40 PM
+Click to open in archives" class="timestamp">3:15</a>
 				
 			
 			
@@ -13920,7 +14072,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[3:15 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371746000008" target="new_1431537132621" title="May 11th at 3:15:46 PMClick to open in archives" class="timestamp">3:15</a>
+					<i class="copy_only">[3:15 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371746000008" target="new_1431537132621" title="May 11th at 3:15:46 PM
+Click to open in archives" class="timestamp">3:15</a>
 				
 			
 			
@@ -14000,7 +14153,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371822000009" target="new_1431537132621" title="May 11th at 3:17:02 PMClick to open in archives" class="timestamp">3:17 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371822000009" target="new_1431537132621" title="May 11th at 3:17:02 PM
+Click to open in archives" class="timestamp">3:17 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -14088,7 +14242,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[3:18 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371933000010" target="new_1431537132621" title="May 11th at 3:18:53 PMClick to open in archives" class="timestamp">3:18</a>
+					<i class="copy_only">[3:18 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371933000010" target="new_1431537132621" title="May 11th at 3:18:53 PM
+Click to open in archives" class="timestamp">3:18</a>
 				
 			
 			
@@ -14170,7 +14325,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371998000011" target="new_1431537132621" title="May 11th at 3:19:58 PMClick to open in archives" class="timestamp">3:19 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431371998000011" target="new_1431537132621" title="May 11th at 3:19:58 PM
+Click to open in archives" class="timestamp">3:19 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -14260,7 +14416,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[3:20 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372004000012" target="new_1431537132621" title="May 11th at 3:20:04 PMClick to open in archives" class="timestamp">3:20</a>
+					<i class="copy_only">[3:20 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372004000012" target="new_1431537132621" title="May 11th at 3:20:04 PM
+Click to open in archives" class="timestamp">3:20</a>
 				
 			
 			
@@ -14340,7 +14497,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372110000013" target="new_1431537132621" title="May 11th at 3:21:50 PMClick to open in archives" class="timestamp">3:21 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372110000013" target="new_1431537132621" title="May 11th at 3:21:50 PM
+Click to open in archives" class="timestamp">3:21 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -14428,7 +14586,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[3:21 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372118000014" target="new_1431537132621" title="May 11th at 3:21:58 PMClick to open in archives" class="timestamp">3:21</a>
+					<i class="copy_only">[3:21 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372118000014" target="new_1431537132621" title="May 11th at 3:21:58 PM
+Click to open in archives" class="timestamp">3:21</a>
 				
 			
 			
@@ -14510,7 +14669,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372133000015" target="new_1431537132621" title="May 11th at 3:22:13 PMClick to open in archives" class="timestamp">3:22 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372133000015" target="new_1431537132621" title="May 11th at 3:22:13 PM
+Click to open in archives" class="timestamp">3:22 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -14600,7 +14760,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[3:22 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372139000016" target="new_1431537132621" title="May 11th at 3:22:19 PMClick to open in archives" class="timestamp">3:22</a>
+					<i class="copy_only">[3:22 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372139000016" target="new_1431537132621" title="May 11th at 3:22:19 PM
+Click to open in archives" class="timestamp">3:22</a>
 				
 			
 			
@@ -14682,7 +14843,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[3:22 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372149000017" target="new_1431537132621" title="May 11th at 3:22:29 PMClick to open in archives" class="timestamp">3:22</a>
+					<i class="copy_only">[3:22 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372149000017" target="new_1431537132621" title="May 11th at 3:22:29 PM
+Click to open in archives" class="timestamp">3:22</a>
 				
 			
 			
@@ -14762,7 +14924,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372151000018" target="new_1431537132621" title="May 11th at 3:22:31 PMClick to open in archives" class="timestamp">3:22 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372151000018" target="new_1431537132621" title="May 11th at 3:22:31 PM
+Click to open in archives" class="timestamp">3:22 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -14852,7 +15015,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372155000019" target="new_1431537132621" title="May 11th at 3:22:35 PMClick to open in archives" class="timestamp">3:22 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372155000019" target="new_1431537132621" title="May 11th at 3:22:35 PM
+Click to open in archives" class="timestamp">3:22 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -14940,7 +15104,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372187000020" target="new_1431537132621" title="May 11th at 3:23:07 PMClick to open in archives" class="timestamp">3:23 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372187000020" target="new_1431537132621" title="May 11th at 3:23:07 PM
+Click to open in archives" class="timestamp">3:23 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -15028,7 +15193,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[3:23 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372200000021" target="new_1431537132621" title="May 11th at 3:23:20 PMClick to open in archives" class="timestamp">3:23</a>
+					<i class="copy_only">[3:23 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372200000021" target="new_1431537132621" title="May 11th at 3:23:20 PM
+Click to open in archives" class="timestamp">3:23</a>
 				
 			
 			
@@ -15110,7 +15276,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372399000022" target="new_1431537132621" title="May 11th at 3:26:39 PMClick to open in archives" class="timestamp">3:26 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431372399000022" target="new_1431537132621" title="May 11th at 3:26:39 PM
+Click to open in archives" class="timestamp">3:26 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -15200,7 +15367,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431390240000002" target="new_1431537132621" title="May 11th at 8:24:00 PMClick to open in archives" class="timestamp">8:24 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431390240000002" target="new_1431537132621" title="May 11th at 8:24:00 PM
+Click to open in archives" class="timestamp">8:24 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -15290,7 +15458,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[8:24 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431390249000003" target="new_1431537132621" title="May 11th at 8:24:09 PMClick to open in archives" class="timestamp">8:24</a>
+					<i class="copy_only">[8:24 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431390249000003" target="new_1431537132621" title="May 11th at 8:24:09 PM
+Click to open in archives" class="timestamp">8:24</a>
 				
 			
 			
@@ -15372,7 +15541,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[8:24 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431390253000004" target="new_1431537132621" title="May 11th at 8:24:13 PMClick to open in archives" class="timestamp">8:24</a>
+					<i class="copy_only">[8:24 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431390253000004" target="new_1431537132621" title="May 11th at 8:24:13 PM
+Click to open in archives" class="timestamp">8:24</a>
 				
 			
 			
@@ -15454,7 +15624,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[8:24 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431390278000005" target="new_1431537132621" title="May 11th at 8:24:38 PMClick to open in archives" class="timestamp">8:24</a>
+					<i class="copy_only">[8:24 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431390278000005" target="new_1431537132621" title="May 11th at 8:24:38 PM
+Click to open in archives" class="timestamp">8:24</a>
 				
 			
 			
@@ -15534,7 +15705,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431392444000006" target="new_1431537132621" title="May 11th at 9:00:44 PMClick to open in archives" class="timestamp">9:00 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431392444000006" target="new_1431537132621" title="May 11th at 9:00:44 PM
+Click to open in archives" class="timestamp">9:00 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -15624,7 +15796,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431392463000007" target="new_1431537132621" title="May 11th at 9:01:03 PMClick to open in archives" class="timestamp">9:01 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431392463000007" target="new_1431537132621" title="May 11th at 9:01:03 PM
+Click to open in archives" class="timestamp">9:01 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -15712,7 +15885,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431392476000008" target="new_1431537132621" title="May 11th at 9:01:16 PMClick to open in archives" class="timestamp">9:01 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431392476000008" target="new_1431537132621" title="May 11th at 9:01:16 PM
+Click to open in archives" class="timestamp">9:01 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -15800,7 +15974,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[9:01 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431392487000009" target="new_1431537132621" title="May 11th at 9:01:27 PMClick to open in archives" class="timestamp">9:01</a>
+					<i class="copy_only">[9:01 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431392487000009" target="new_1431537132621" title="May 11th at 9:01:27 PM
+Click to open in archives" class="timestamp">9:01</a>
 				
 			
 			
@@ -15880,7 +16055,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[9:01 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431392510000010" target="new_1431537132621" title="May 11th at 9:01:50 PMClick to open in archives" class="timestamp">9:01</a>
+					<i class="copy_only">[9:01 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431392510000010" target="new_1431537132621" title="May 11th at 9:01:50 PM
+Click to open in archives" class="timestamp">9:01</a>
 				
 			
 			
@@ -15962,7 +16138,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431392525000011" target="new_1431537132621" title="May 11th at 9:02:05 PMClick to open in archives" class="timestamp">9:02 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431392525000011" target="new_1431537132621" title="May 11th at 9:02:05 PM
+Click to open in archives" class="timestamp">9:02 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -16054,7 +16231,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431459221000002" target="new_1431537132621" title="" class="timestamp" data-original-title="Yesterday  at 3:33:41 PMClick to open in archives">3:33 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431459221000002" target="new_1431537132621" title="" class="timestamp" data-original-title="Yesterday  at 3:33:41 PM
+Click to open in archives">3:33 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -16144,7 +16322,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[3:34 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431459253000003" target="new_1431537132621" title="Yesterday  at 3:34:13 PMClick to open in archives" class="timestamp">3:34</a>
+					<i class="copy_only">[3:34 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431459253000003" target="new_1431537132621" title="Yesterday  at 3:34:13 PM
+Click to open in archives" class="timestamp">3:34</a>
 				
 			
 			
@@ -16226,7 +16405,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[3:34 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431459262000004" target="new_1431537132621" title="Yesterday  at 3:34:22 PMClick to open in archives" class="timestamp">3:34</a>
+					<i class="copy_only">[3:34 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431459262000004" target="new_1431537132621" title="Yesterday  at 3:34:22 PM
+Click to open in archives" class="timestamp">3:34</a>
 				
 			
 			
@@ -16308,7 +16488,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538497000002" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:34:57 PMClick to open in archives">1:34 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538497000002" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:34:57 PM
+Click to open in archives">1:34 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -16396,7 +16577,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:35 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538549000003" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:35:49 PMClick to open in archives">1:35</a>
+					<i class="copy_only">[1:35 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538549000003" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:35:49 PM
+Click to open in archives">1:35</a>
 				
 			
 			
@@ -16476,7 +16658,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:37 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538637000004" target="new_1431537132621" title="Today  at 1:37:17 PMClick to open in archives" class="timestamp">1:37</a>
+					<i class="copy_only">[1:37 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538637000004" target="new_1431537132621" title="Today  at 1:37:17 PM
+Click to open in archives" class="timestamp">1:37</a>
 				
 			
 			
@@ -16556,7 +16739,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:37 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538663000005" target="new_1431537132621" title="Today  at 1:37:43 PMClick to open in archives" class="timestamp">1:37</a>
+					<i class="copy_only">[1:37 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538663000005" target="new_1431537132621" title="Today  at 1:37:43 PM
+Click to open in archives" class="timestamp">1:37</a>
 				
 			
 			
@@ -16643,7 +16827,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538693000006" target="new_1431537132621" title="Today  at 1:38:13 PMClick to open in archives" class="timestamp">1:38 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538693000006" target="new_1431537132621" title="Today  at 1:38:13 PM
+Click to open in archives" class="timestamp">1:38 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -16738,7 +16923,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:38 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538713000007" target="new_1431537132621" title="Today  at 1:38:33 PMClick to open in archives" class="timestamp">1:38</a>
+					<i class="copy_only">[1:38 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538713000007" target="new_1431537132621" title="Today  at 1:38:33 PM
+Click to open in archives" class="timestamp">1:38</a>
 				
 			
 			
@@ -16819,7 +17005,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538743000008" target="new_1431537132621" title="Today  at 1:39:03 PMClick to open in archives" class="timestamp">1:39 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538743000008" target="new_1431537132621" title="Today  at 1:39:03 PM
+Click to open in archives" class="timestamp">1:39 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -16907,7 +17094,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:39 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538761000009" target="new_1431537132621" title="Today  at 1:39:21 PMClick to open in archives" class="timestamp">1:39</a>
+					<i class="copy_only">[1:39 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538761000009" target="new_1431537132621" title="Today  at 1:39:21 PM
+Click to open in archives" class="timestamp">1:39</a>
 				
 			
 			
@@ -16994,7 +17182,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538763000010" target="new_1431537132621" title="Today  at 1:39:23 PMClick to open in archives" class="timestamp">1:39 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538763000010" target="new_1431537132621" title="Today  at 1:39:23 PM
+Click to open in archives" class="timestamp">1:39 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -17082,7 +17271,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538772000011" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:39:32 PMClick to open in archives">1:39 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538772000011" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:39:32 PM
+Click to open in archives">1:39 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -17177,7 +17367,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538784000012" target="new_1431537132621" title="Today  at 1:39:44 PMClick to open in archives" class="timestamp">1:39 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538784000012" target="new_1431537132621" title="Today  at 1:39:44 PM
+Click to open in archives" class="timestamp">1:39 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -17272,7 +17463,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:40 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538811000013" target="new_1431537132621" title="Today  at 1:40:11 PMClick to open in archives" class="timestamp">1:40</a>
+					<i class="copy_only">[1:40 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538811000013" target="new_1431537132621" title="Today  at 1:40:11 PM
+Click to open in archives" class="timestamp">1:40</a>
 				
 			
 			
@@ -17353,7 +17545,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538836000014" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:40:36 PMClick to open in archives">1:40 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538836000014" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:40:36 PM
+Click to open in archives">1:40 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -17448,7 +17641,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538848000015" target="new_1431537132621" title="Today  at 1:40:48 PMClick to open in archives" class="timestamp">1:40 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538848000015" target="new_1431537132621" title="Today  at 1:40:48 PM
+Click to open in archives" class="timestamp">1:40 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -17536,7 +17730,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538851000016" target="new_1431537132621" title="Today  at 1:40:51 PMClick to open in archives" class="timestamp">1:40 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538851000016" target="new_1431537132621" title="Today  at 1:40:51 PM
+Click to open in archives" class="timestamp">1:40 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -17625,7 +17820,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:41 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538889000017" target="new_1431537132621" title="Today  at 1:41:29 PMClick to open in archives" class="timestamp">1:41</a>
+					<i class="copy_only">[1:41 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538889000017" target="new_1431537132621" title="Today  at 1:41:29 PM
+Click to open in archives" class="timestamp">1:41</a>
 				
 			
 			
@@ -17712,7 +17908,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538900000018" target="new_1431537132621" title="Today  at 1:41:40 PMClick to open in archives" class="timestamp">1:41 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431538900000018" target="new_1431537132621" title="Today  at 1:41:40 PM
+Click to open in archives" class="timestamp">1:41 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -17801,7 +17998,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539029000019" target="new_1431537132621" title="Today  at 1:43:49 PMClick to open in archives" class="timestamp">1:43 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539029000019" target="new_1431537132621" title="Today  at 1:43:49 PM
+Click to open in archives" class="timestamp">1:43 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -17891,7 +18089,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539174000020" target="new_1431537132621" title="Today  at 1:46:14 PMClick to open in archives" class="timestamp">1:46 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539174000020" target="new_1431537132621" title="Today  at 1:46:14 PM
+Click to open in archives" class="timestamp">1:46 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -17981,7 +18180,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:48 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539336000021" target="new_1431537132621" title="Today  at 1:48:56 PMClick to open in archives" class="timestamp">1:48</a>
+					<i class="copy_only">[1:48 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539336000021" target="new_1431537132621" title="Today  at 1:48:56 PM
+Click to open in archives" class="timestamp">1:48</a>
 				
 			
 			
@@ -18061,7 +18261,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539432000022" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:50:32 PMClick to open in archives">1:50 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539432000022" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:50:32 PM
+Click to open in archives">1:50 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -18149,7 +18350,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:50 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539435000023" target="new_1431537132621" title="Today  at 1:50:35 PMClick to open in archives" class="timestamp">1:50</a>
+					<i class="copy_only">[1:50 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539435000023" target="new_1431537132621" title="Today  at 1:50:35 PM
+Click to open in archives" class="timestamp">1:50</a>
 				
 			
 			
@@ -18231,7 +18433,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539462000024" target="new_1431537132621" title="Today  at 1:51:02 PMClick to open in archives" class="timestamp">1:51 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539462000024" target="new_1431537132621" title="Today  at 1:51:02 PM
+Click to open in archives" class="timestamp">1:51 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -18319,7 +18522,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539486000025" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:51:26 PMClick to open in archives">1:51 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539486000025" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:51:26 PM
+Click to open in archives">1:51 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -18414,7 +18618,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539552000026" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:52:32 PMClick to open in archives">1:52 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539552000026" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:52:32 PM
+Click to open in archives">1:52 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -18509,7 +18714,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:53 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539586000027" target="new_1431537132621" title="Today  at 1:53:06 PMClick to open in archives" class="timestamp">1:53</a>
+					<i class="copy_only">[1:53 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539586000027" target="new_1431537132621" title="Today  at 1:53:06 PM
+Click to open in archives" class="timestamp">1:53</a>
 				
 			
 			
@@ -18590,7 +18796,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539597000028" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:53:17 PMClick to open in archives">1:53 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539597000028" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:53:17 PM
+Click to open in archives">1:53 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -18678,7 +18885,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:53 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539604000029" target="new_1431537132621" title="Today  at 1:53:24 PMClick to open in archives" class="timestamp">1:53</a>
+					<i class="copy_only">[1:53 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539604000029" target="new_1431537132621" title="Today  at 1:53:24 PM
+Click to open in archives" class="timestamp">1:53</a>
 				
 			
 			
@@ -18765,7 +18973,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539641000030" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:54:01 PMClick to open in archives">1:54 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539641000030" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:54:01 PM
+Click to open in archives">1:54 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -18853,7 +19062,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539654000031" target="new_1431537132621" title="Today  at 1:54:14 PMClick to open in archives" class="timestamp">1:54 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539654000031" target="new_1431537132621" title="Today  at 1:54:14 PM
+Click to open in archives" class="timestamp">1:54 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -18948,7 +19158,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539655000032" target="new_1431537132621" title="Today  at 1:54:15 PMClick to open in archives" class="timestamp">1:54 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539655000032" target="new_1431537132621" title="Today  at 1:54:15 PM
+Click to open in archives" class="timestamp">1:54 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -19036,7 +19247,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539691000033" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:54:51 PMClick to open in archives">1:54 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539691000033" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:54:51 PM
+Click to open in archives">1:54 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -19124,7 +19336,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:54 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539699000034" target="new_1431537132621" title="Today  at 1:54:59 PMClick to open in archives" class="timestamp">1:54</a>
+					<i class="copy_only">[1:54 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539699000034" target="new_1431537132621" title="Today  at 1:54:59 PM
+Click to open in archives" class="timestamp">1:54</a>
 				
 			
 			
@@ -19204,7 +19417,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:55 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539709000035" target="new_1431537132621" title="Today  at 1:55:09 PMClick to open in archives" class="timestamp">1:55</a>
+					<i class="copy_only">[1:55 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539709000035" target="new_1431537132621" title="Today  at 1:55:09 PM
+Click to open in archives" class="timestamp">1:55</a>
 				
 			
 			
@@ -19291,7 +19505,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539769000036" target="new_1431537132621" title="Today  at 1:56:09 PMClick to open in archives" class="timestamp">1:56 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539769000036" target="new_1431537132621" title="Today  at 1:56:09 PM
+Click to open in archives" class="timestamp">1:56 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -19386,7 +19601,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:56 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539781000037" target="new_1431537132621" title="Today  at 1:56:21 PMClick to open in archives" class="timestamp">1:56</a>
+					<i class="copy_only">[1:56 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539781000037" target="new_1431537132621" title="Today  at 1:56:21 PM
+Click to open in archives" class="timestamp">1:56</a>
 				
 			
 			
@@ -19473,7 +19689,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:58 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539936000038" target="new_1431537132621" title="Today  at 1:58:56 PMClick to open in archives" class="timestamp">1:58</a>
+					<i class="copy_only">[1:58 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539936000038" target="new_1431537132621" title="Today  at 1:58:56 PM
+Click to open in archives" class="timestamp">1:58</a>
 				
 			
 			
@@ -19560,7 +19777,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[1:59 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539954000039" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:59:14 PMClick to open in archives">1:59</a>
+					<i class="copy_only">[1:59 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431539954000039" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 1:59:14 PM
+Click to open in archives">1:59</a>
 				
 			
 			
@@ -19641,7 +19859,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540006000040" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 2:00:06 PMClick to open in archives">2:00 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540006000040" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 2:00:06 PM
+Click to open in archives">2:00 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -19729,7 +19948,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:00 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540014000041" target="new_1431537132621" title="Today  at 2:00:14 PMClick to open in archives" class="timestamp">2:00</a>
+					<i class="copy_only">[2:00 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540014000041" target="new_1431537132621" title="Today  at 2:00:14 PM
+Click to open in archives" class="timestamp">2:00</a>
 				
 			
 			
@@ -19809,7 +20029,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:00 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540017000042" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 2:00:17 PMClick to open in archives">2:00</a>
+					<i class="copy_only">[2:00 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540017000042" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 2:00:17 PM
+Click to open in archives">2:00</a>
 				
 			
 			
@@ -19889,7 +20110,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:00 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540057000043" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 2:00:57 PMClick to open in archives">2:00</a>
+					<i class="copy_only">[2:00 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540057000043" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 2:00:57 PM
+Click to open in archives">2:00</a>
 				
 			
 			
@@ -19969,7 +20191,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:01 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540064000044" target="new_1431537132621" title="Today  at 2:01:04 PMClick to open in archives" class="timestamp">2:01</a>
+					<i class="copy_only">[2:01 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540064000044" target="new_1431537132621" title="Today  at 2:01:04 PM
+Click to open in archives" class="timestamp">2:01</a>
 				
 			
 			
@@ -20056,7 +20279,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540578000045" target="new_1431537132621" title="Today  at 2:09:38 PMClick to open in archives" class="timestamp">2:09 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540578000045" target="new_1431537132621" title="Today  at 2:09:38 PM
+Click to open in archives" class="timestamp">2:09 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -20151,7 +20375,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:09 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540589000046" target="new_1431537132621" title="Today  at 2:09:49 PMClick to open in archives" class="timestamp">2:09</a>
+					<i class="copy_only">[2:09 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540589000046" target="new_1431537132621" title="Today  at 2:09:49 PM
+Click to open in archives" class="timestamp">2:09</a>
 				
 			
 			
@@ -20231,7 +20456,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540597000047" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 2:09:57 PMClick to open in archives">2:09 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540597000047" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 2:09:57 PM
+Click to open in archives">2:09 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -20326,7 +20552,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540607000048" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 2:10:07 PMClick to open in archives">2:10 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540607000048" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 2:10:07 PM
+Click to open in archives">2:10 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -20421,7 +20648,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:11 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540671000049" target="new_1431537132621" title="Today  at 2:11:11 PMClick to open in archives" class="timestamp">2:11</a>
+					<i class="copy_only">[2:11 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431540671000049" target="new_1431537132621" title="Today  at 2:11:11 PM
+Click to open in archives" class="timestamp">2:11</a>
 				
 			
 			
@@ -20502,7 +20730,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541538000050" target="new_1431537132621" title="Today  at 2:25:38 PMClick to open in archives" class="timestamp">2:25 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541538000050" target="new_1431537132621" title="Today  at 2:25:38 PM
+Click to open in archives" class="timestamp">2:25 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -20590,7 +20819,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:25 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541543000051" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 2:25:43 PMClick to open in archives">2:25</a>
+					<i class="copy_only">[2:25 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541543000051" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 2:25:43 PM
+Click to open in archives">2:25</a>
 				
 			
 			
@@ -20677,7 +20907,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541548000052" target="new_1431537132621" title="Today  at 2:25:48 PMClick to open in archives" class="timestamp">2:25 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541548000052" target="new_1431537132621" title="Today  at 2:25:48 PM
+Click to open in archives" class="timestamp">2:25 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -20766,7 +20997,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541562000053" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 2:26:02 PMClick to open in archives">2:26 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541562000053" target="new_1431537132621" title="" class="timestamp" data-original-title="Today  at 2:26:02 PM
+Click to open in archives">2:26 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -20861,7 +21093,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541578000054" target="new_1431537132621" title="Today  at 2:26:18 PMClick to open in archives" class="timestamp">2:26 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541578000054" target="new_1431537132621" title="Today  at 2:26:18 PM
+Click to open in archives" class="timestamp">2:26 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -20956,7 +21189,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:26 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541586000055" target="new_1431537132621" title="Today  at 2:26:26 PMClick to open in archives" class="timestamp">2:26</a>
+					<i class="copy_only">[2:26 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541586000055" target="new_1431537132621" title="Today  at 2:26:26 PM
+Click to open in archives" class="timestamp">2:26</a>
 				
 			
 			
@@ -21036,7 +21270,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541590000056" target="new_1431537132621" title="Today  at 2:26:30 PMClick to open in archives" class="timestamp">2:26 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541590000056" target="new_1431537132621" title="Today  at 2:26:30 PM
+Click to open in archives" class="timestamp">2:26 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -21131,7 +21366,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541595000057" target="new_1431537132621" title="Today  at 2:26:35 PMClick to open in archives" class="timestamp">2:26 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541595000057" target="new_1431537132621" title="Today  at 2:26:35 PM
+Click to open in archives" class="timestamp">2:26 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -21219,7 +21455,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541602000058" target="new_1431537132621" title="Today  at 2:26:42 PMClick to open in archives" class="timestamp">2:26 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541602000058" target="new_1431537132621" title="Today  at 2:26:42 PM
+Click to open in archives" class="timestamp">2:26 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -21314,7 +21551,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541610000059" target="new_1431537132621" title="Today  at 2:26:50 PMClick to open in archives" class="timestamp">2:26 PM</a><i class="copy_only">]</i>
+					<i class="copy_only">[</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541610000059" target="new_1431537132621" title="Today  at 2:26:50 PM
+Click to open in archives" class="timestamp">2:26 PM</a><i class="copy_only">]</i>
 				
 
 					
@@ -21409,7 +21647,8 @@ setTimeout(function() {
 		
 			
 				
-					<i class="copy_only">[2:26 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541617000060" target="new_1431537132621" title="Today  at 2:26:57 PMClick to open in archives" class="timestamp">2:26</a>
+					<i class="copy_only">[2:26 PM]</i><a href="https://blitzkrieg.slack.com/archives/D03NRT6NG/p1431541617000060" target="new_1431537132621" title="Today  at 2:26:57 PM
+Click to open in archives" class="timestamp">2:26</a>
 				
 			
 			
@@ -21478,7 +21717,7 @@ setTimeout(function() {
 					<div class="heading">Activity <a class="close_flexpane" title="Close Flexpane"><i class="ts_icon ts_icon_times"></i></a></div>
 					<div id="monkey_scroll_wrapper_for_activity_feed_scroller" class="monkey_scroll_wrapper "><div class="monkey_scroll_bar "><div class="monkey_scroll_handle " style="left: -3px;">	<div class="monkey_scroll_handle_inner "></div></div></div><div class="monkey_scroll_hider "><div id="activity_feed_scroller" class="flex_content_scroller monkey_scroller">
 						<div id="activity_feed_items">
-							<div class="loading_hash_animation"><img src="./erika _ Blitzkrieg Slack_files/loading_hash_animation_@2x.gif" alt="Loading"><br>loading...</div>
+							<div class="loading_hash_animation"><img src="erika%20_%20Blitzkrieg%20Slack_files/loading_hash_animation_@2x.gif" alt="Loading"><br>loading...</div>
 						</div>
 						<div id="activity_feed_block" class="hidden activity_item help">
 							<p>This is the very beginning of your activity feed. Here you'll find a continuously updated summary of what's going on across the team.</p>
@@ -21494,7 +21733,7 @@ setTimeout(function() {
 				<div id="monkey_scroll_wrapper_for_stars_scroller" class="monkey_scroll_wrapper "><div class="monkey_scroll_bar "><div class="monkey_scroll_handle " style="left: -3px;">	<div class="monkey_scroll_handle_inner "></div></div></div><div class="monkey_scroll_hider "><div id="stars_scroller" class="flex_content_scroller monkey_scroller">
 					<div class="selectable_flex_pane_padder">
 						<div id="member_stars_list" class="light_theme">
-							<div class="loading_hash_animation"><img src="./erika _ Blitzkrieg Slack_files/loading_hash_animation_@2x.gif" alt="Loading"><br>loading...</div>
+							<div class="loading_hash_animation"><img src="erika%20_%20Blitzkrieg%20Slack_files/loading_hash_animation_@2x.gif" alt="Loading"><br>loading...</div>
 						</div>
 						<div id="member_stars_explanation" class="hidden help">			
 							<p>You haven't starred anything yet. Maybe now's the time to start? You can add a star to messages, files, snippets, posts, comments ... pretty much anything in Slack.</p>
@@ -21514,7 +21753,7 @@ setTimeout(function() {
 								<div id="monkey_scroll_wrapper_for_mentions_scroller" class="monkey_scroll_wrapper "><div class="monkey_scroll_bar "><div class="monkey_scroll_handle " style="left: -3px;">	<div class="monkey_scroll_handle_inner "></div></div></div><div class="monkey_scroll_hider "><div id="mentions_scroller" class="flex_content_scroller monkey_scroller">
 					<div class="selectable_flex_pane_padder">
 						<div id="member_mentions" class="light_theme">
-							<div class="loading_hash_animation"><img src="./erika _ Blitzkrieg Slack_files/loading_hash_animation_@2x.gif" alt="Loading"><br>loading...</div>
+							<div class="loading_hash_animation"><img src="erika%20_%20Blitzkrieg%20Slack_files/loading_hash_animation_@2x.gif" alt="Loading"><br>loading...</div>
 						</div>
 						<div id="member_mentions_explanation" class="hidden help">			
 							<p>You don't have any mentions yet. When someone mentions you by name or uses one of your highlight words, that message will appear here.</p>			
@@ -22874,8 +23113,8 @@ var cdn_url = 'https://slack.global.ssl.fastly.net';
 
 		
 <!-- output_js "core" -->
-<script type="text/javascript" src="./erika _ Blitzkrieg Slack_files/rollup-core_required.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="./erika _ Blitzkrieg Slack_files/bootstrap-client.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="erika%20_%20Blitzkrieg%20Slack_files/rollup-core_required.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="erika%20_%20Blitzkrieg%20Slack_files/bootstrap-client.js" crossorigin="anonymous"></script>
 
 
 <script type="text/javascript">
@@ -22990,9 +23229,9 @@ TS.boot(boot_data);
 </script>
 
 <!-- output_js "secondary" -->
-<script type="text/javascript" src="./erika _ Blitzkrieg Slack_files/rollup-secondary_required.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="./erika _ Blitzkrieg Slack_files/TS.storage.js" crossorigin="anonymous"></script>
-<script type="text/javascript" src="./erika _ Blitzkrieg Slack_files/rollup-client.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="erika%20_%20Blitzkrieg%20Slack_files/rollup-secondary_required.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="erika%20_%20Blitzkrieg%20Slack_files/TS.storage.js" crossorigin="anonymous"></script>
+<script type="text/javascript" src="erika%20_%20Blitzkrieg%20Slack_files/rollup-client.js" crossorigin="anonymous"></script>
 
 
 <!-- output_js "regular" -->
