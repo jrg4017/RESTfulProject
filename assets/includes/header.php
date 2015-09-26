@@ -3,6 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <title>ISTE340 P2</title>
+
+<!-- SCRIPTS FOR THE WEBSITE -->
+
+    <!-- Latest JQUERY -->
     <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 
     <!-- link to css main -->
@@ -24,10 +28,17 @@
     <link href="assets/css/datatable.css" rel="stylesheet">
 
     <!--JQUERY PLUGIN 5: GOOGLE MAPS-->
-    <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAxaRnS-0a3lXGcPXW_XPd43ROMGBN8jaI&sensor=false"></script>
-
+    <!-- <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAxaRnS-0a3lXGcPXW_XPd43ROMGBN8jaI&sensor=false"></script>
+    -->
+    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
 
     <!--PURE CSS styles -->
     <link rel="stylesheet" href="assets/css/pure.css">
 
-    <script type="text/javascript">
+    <!-- modular, repeatable functions -->
+    <script type="text/javascript" src="assets/js/modularFunctions.js"></script>
+
+    <!-- function specifically for each tab -->
+    <script type="text/javascript" src="assets/js/tabFunctions.js"></script>
+
+</head>

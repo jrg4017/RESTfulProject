@@ -2,47 +2,40 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="09b194aa-9164-4175-badf-8e8a859802c1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/includes/header.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/project2.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\css\datatable.css" afterPath="$PROJECT_DIR$/assets/css/datatable.css" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\css\main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\css\pure.css" afterPath="$PROJECT_DIR$/assets/css/pure.css" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\js\jquery.gmap-1.1.0-min.js" afterPath="$PROJECT_DIR$/assets/js/jquery.gmap-1.1.0-min.js" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\js\maps.js" afterPath="$PROJECT_DIR$/assets/js/maps.js" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\js\showHide.js" afterPath="$PROJECT_DIR$/assets/js/showHide.js" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\color.gif.png" afterPath="$PROJECT_DIR$/assets/media/color.gif.png" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\confectionary.png" afterPath="$PROJECT_DIR$/assets/media/confectionary.png" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack.html" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack.html" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\TS.storage.js" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/TS.storage.js" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\analytics.js" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/analytics.js" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\android-xhdpi.png" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/android-xhdpi.png" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\beacon.js" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/beacon.js" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\bootstrap-client.js" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/bootstrap-client.js" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\emoji_menu_button.png" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/emoji_menu_button.png" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\ios-96.png" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/ios-96.png" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\landing_slack_hash_wordmark_logo.png" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/landing_slack_hash_wordmark_logo.png" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\lato-1.css" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/lato-1.css" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\loading.gif" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/loading.gif" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\loading_hash_animation_@2x.gif" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/loading_hash_animation_@2x.gif" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\mixpanel-2-latest.min.js" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/mixpanel-2-latest.min.js" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\rollup-client.js" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/rollup-client.js" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\rollup-client_core.css" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/rollup-client_core.css" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\rollup-client_general.css" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/rollup-client_general.css" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\rollup-client_primary.css" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/rollup-client_primary.css" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\rollup-client_secondary.css" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/rollup-client_secondary.css" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\rollup-core_required.js" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/rollup-core_required.js" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\rollup-secondary_required.js" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/rollup-secondary_required.js" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\slackbot_48.png" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/slackbot_48.png" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\erika _ Blitzkrieg Slack_files\twitter_64.png" afterPath="$PROJECT_DIR$/assets/media/erika _ Blitzkrieg Slack_files/twitter_64.png" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\health.png" afterPath="$PROJECT_DIR$/assets/media/health.png" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\knit.png" afterPath="$PROJECT_DIR$/assets/media/knit.png" />
-      <change type="MOVED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\media\symphony.png" afterPath="$PROJECT_DIR$/assets/media/symphony.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/modularFunctions.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/includes/states.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/assets/js/tabFunctions.js" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\js\maps.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\color.gif.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\confectionary.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\TS.storage.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\analytics.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\android-xhdpi.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\beacon.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\bootstrap-client.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\emoji_menu_button.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\ios-96.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\landing_slack_hash_wordmark_logo.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\lato-1.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\loading_hash_animation_@2x.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\mixpanel-2-latest.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\rollup-client.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\rollup-client_core.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\rollup-client_general.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\rollup-client_primary.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\rollup-client_secondary.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\rollup-core_required.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\rollup-secondary_required.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\slackbot_48.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\erika _ Blitzkrieg Slack_files\twitter_64.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\health.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Julianna Rose\Downloads\project2-2015-09-11\project2\assets\media\knit.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/includes/header.php" afterPath="$PROJECT_DIR$/assets/includes/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project2.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,17 +63,37 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.0655737" vertical-offset="357" max-vertical-offset="14994">
-              <caret line="32" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="31" />
+            <state vertical-scroll-proportion="-5.0163937" vertical-offset="153" max-vertical-offset="15266">
+              <caret line="27" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#em#0;n#p#1;n#fieldset#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1443229526745" expanded="true" signature="23621:23632" placeholder="..." />
-                <marker date="1443229526745" expanded="true" signature="23766:23777" placeholder="..." />
-                <marker date="1443229526745" expanded="true" signature="23821:23832" placeholder="..." />
-                <marker date="1443229526745" expanded="true" signature="23921:23932" placeholder="..." />
-                <marker date="1443229526745" expanded="true" signature="24066:24077" placeholder="..." />
-                <marker date="1443229526745" expanded="true" signature="24121:24132" placeholder="..." />
+                <marker date="1443237364274" expanded="true" signature="24443:24454" placeholder="..." />
+                <marker date="1443237364274" expanded="true" signature="24588:24599" placeholder="..." />
+                <marker date="1443237364274" expanded="true" signature="24643:24654" placeholder="..." />
+                <marker date="1443237364274" expanded="true" signature="24743:24754" placeholder="..." />
+                <marker date="1443237364274" expanded="true" signature="24888:24899" placeholder="..." />
+                <marker date="1443237364274" expanded="true" signature="24943:24954" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="tabFunctions.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assets/js/tabFunctions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.437788" vertical-offset="3336" max-vertical-offset="11475">
+              <caret line="213" column="28" selection-start-line="213" selection-start-column="28" selection-end-line="213" selection-end-column="28" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <marker date="1443238573406" expanded="true" signature="21551:21562" placeholder="..." />
+                <marker date="1443238573406" expanded="true" signature="21696:21707" placeholder="..." />
+                <marker date="1443238573406" expanded="true" signature="21751:21762" placeholder="..." />
+                <marker date="1443238573406" expanded="true" signature="21854:21865" placeholder="..." />
+                <marker date="1443238573406" expanded="true" signature="21999:22010" placeholder="..." />
+                <marker date="1443238573406" expanded="true" signature="22054:22065" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -89,19 +102,56 @@
       <file leaf-file-name="header.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/includes/header.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="646">
-              <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+            <state vertical-scroll-proportion="-13.153846" vertical-offset="32" max-vertical-offset="833">
+              <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="modularFunctions.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/modularFunctions.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-8.615385" vertical-offset="14" max-vertical-offset="833">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="682">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-22.852459" vertical-offset="0" max-vertical-offset="1496">
+              <caret line="82" column="7" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
+              <folding>
+                <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#em#0;n#p#1;n#fieldset#0;n#form#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="states.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/includes/states.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-24.307692" vertical-offset="473" max-vertical-offset="1207">
+              <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="showHide.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assets/js/showHide.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -114,8 +164,15 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/assets/js/main.js" />
+        <option value="$PROJECT_DIR$/assets/js/modularFunctions.php" />
+        <option value="$PROJECT_DIR$/assets/includes/states.php" />
+        <option value="$PROJECT_DIR$/assets/js/maps.js" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/assets/js/modularFunctions.js" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/assets/includes/header.php" />
+        <option value="$PROJECT_DIR$/assets/js/tabFunctions.js" />
       </list>
     </option>
   </component>
@@ -124,10 +181,9 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="54" />
-    <option name="y" value="-8" />
-    <option name="width" value="1394" />
-    <option name="height" value="916" />
+    <option name="x" value="350" />
+    <option name="width" value="1097" />
+    <option name="height" value="907" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -198,6 +254,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="project2" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="includes" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -251,29 +325,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1394" height="916" extended-state="6" />
+    <frame x="350" y="0" width="1097" height="907" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20090635" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.521327" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -293,7 +367,9 @@
     </option>
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -305,36 +381,85 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/showHide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="799">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/includes/states.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-24.307692" vertical-offset="473" max-vertical-offset="1207">
+          <caret line="65" column="9" selection-start-line="65" selection-start-column="9" selection-end-line="65" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assets/js/modularFunctions.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.615385" vertical-offset="14" max-vertical-offset="833">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.0655737" vertical-offset="357" max-vertical-offset="14994">
-          <caret line="32" column="31" selection-start-line="0" selection-start-column="0" selection-end-line="32" selection-end-column="31" />
+        <state vertical-scroll-proportion="-5.0163937" vertical-offset="153" max-vertical-offset="15266">
+          <caret line="27" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#em#0;n#p#1;n#fieldset#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#div#2;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1443229526745" expanded="true" signature="23621:23632" placeholder="..." />
-            <marker date="1443229526745" expanded="true" signature="23766:23777" placeholder="..." />
-            <marker date="1443229526745" expanded="true" signature="23821:23832" placeholder="..." />
-            <marker date="1443229526745" expanded="true" signature="23921:23932" placeholder="..." />
-            <marker date="1443229526745" expanded="true" signature="24066:24077" placeholder="..." />
-            <marker date="1443229526745" expanded="true" signature="24121:24132" placeholder="..." />
+            <marker date="1443237364274" expanded="true" signature="24443:24454" placeholder="..." />
+            <marker date="1443237364274" expanded="true" signature="24588:24599" placeholder="..." />
+            <marker date="1443237364274" expanded="true" signature="24643:24654" placeholder="..." />
+            <marker date="1443237364274" expanded="true" signature="24743:24754" placeholder="..." />
+            <marker date="1443237364274" expanded="true" signature="24888:24899" placeholder="..." />
+            <marker date="1443237364274" expanded="true" signature="24943:24954" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.852459" vertical-offset="0" max-vertical-offset="1496">
+          <caret line="82" column="7" selection-start-line="82" selection-start-column="7" selection-end-line="82" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#div#1;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#em#0;n#p#1;n#fieldset#0;n#form#0;n#div#2;n#body#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#fieldset#0;n#form#0;n#div#2;n#body#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/includes/header.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.038462" vertical-offset="0" max-vertical-offset="646">
-          <caret line="23" column="38" selection-start-line="23" selection-start-column="38" selection-end-line="23" selection-end-column="38" />
+        <state vertical-scroll-proportion="-13.153846" vertical-offset="32" max-vertical-offset="833">
+          <caret line="22" column="39" selection-start-line="22" selection-start-column="39" selection-end-line="22" selection-end-column="39" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/assets/js/tabFunctions.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="708">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.437788" vertical-offset="3336" max-vertical-offset="11475">
+          <caret line="213" column="28" selection-start-line="213" selection-start-column="28" selection-end-line="213" selection-end-column="28" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1443238573406" expanded="true" signature="21551:21562" placeholder="..." />
+            <marker date="1443238573406" expanded="true" signature="21696:21707" placeholder="..." />
+            <marker date="1443238573406" expanded="true" signature="21751:21762" placeholder="..." />
+            <marker date="1443238573406" expanded="true" signature="21854:21865" placeholder="..." />
+            <marker date="1443238573406" expanded="true" signature="21999:22010" placeholder="..." />
+            <marker date="1443238573406" expanded="true" signature="22054:22065" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

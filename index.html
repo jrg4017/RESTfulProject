@@ -6,10 +6,10 @@
 <script src="http://code.jquery.com/jquery-latest.js" type="text/javascript"></script>
 
 <!-- link to css main -->
-<link href="assets/css/main.css" rel="stylesheet">
+<link href="css/main.css" rel="stylesheet">
 
  <!-- JQUERY PLUGIN 1: show / hide search box -->
-<script src="assets/js/showHide.js"></script>
+<script src="js/showHide.js"></script>
 
 <!-- JQUERY PLUGIN 2: POP UP WITH TABS -->
 <script src="http://code.jboxcdn.com/0.3.2/jBox.min.js"></script>
@@ -21,19 +21,19 @@
 
 <!--JQUERY PLUGIN 4: PAGINATION WITH CONTROL OVER RESULTS-->
 <script src="//cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js"></script>
-<link href="assets/css/datatable.css" rel="stylesheet">
+<link href="css/datatable.css" rel="stylesheet">
 
 <!--JQUERY PLUGIN 5: GOOGLE MAPS-->
 <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyAxaRnS-0a3lXGcPXW_XPd43ROMGBN8jaI&sensor=false"></script>
 
 
 <!--PURE CSS styles -->
-<link rel="stylesheet" href="assets/css/pure.css">
+<link rel="stylesheet" href="css/pure.css">
 
 <script type="text/javascript">
 
 ///////////////////////////////////////
-//Build the search functionality. <-- REQUIRED TO BE IN INDEX BY ASSIGNMENT
+//Build the search functionality.
 //onload, get the cities for the state, show/hide div
 	$(document).ready(function(){
 		getCities('NY');
@@ -65,35 +65,37 @@ function getData(id){
 					//output that server is down/sucks
 				}else{
 					
-                    //create a pop up box that contains the tabs
-                    var myModal = new jBox('Modal',{
-                        content: $("#tabs"),
-                        position:{
-                            x: 'center',
-                            y: 'top'
-                        },
-                        offset:{ //set the offset from the edge
-                            y: 50
-                        },
-                        outside: 'x' //outside of target
-
-                    });
-
-                    myModal.open(); //open the pop up
+                                        //create a pop up box that contains the tabs
+                                        var myModal = new jBox('Modal',{
+                                            content: $("#tabs"),
+                                            position:{
+                                                x: 'center',
+                                                y: 'top'
+                                            },
+                                            offset:{ //set the offset from the edge
+                                                y: 50
+                                            },
+                                            outside: 'x' //outside of target
+                                            
+                                        });
+                                       
+                                        myModal.open(); //open the pop up
                     
 					//information for the tabs
-                    getGeneral(id);
-                    getLocations(id);
-                    getTraining(id);
-                    getTreatment(id);
-                    getFacilities(id);
-                    getEquipment(id);
-                    getPhysicians(id);
-                    getPeople(id);
-				}//close if else
-			}//close success
-		});//close .ajax func
-	}//close getData
+                                        getGeneral(id);
+                                        getLocations(id);
+                                        getTraining(id);
+                                        getTreatment(id);
+                                        getFacilities(id);
+                                        getEquipment(id);
+                                        getPhysicians(id);
+                                        getPeople(id);
+                                        
+                                       
+				}
+			}
+		});
+	}
 
 	// This will be called by the changing of the select to get the general information for orgId
 	function getGeneral(id){
@@ -199,9 +201,24 @@ function getData(id){
              }//end success
         });//end ajax
 	}
-/** ************************************************************************************
- ** REPEATABLE FUNCTIONS ***************************************************************
- ***************************************************************************************/
+
+	function GetLattLong(allAddr) {
+            var geocoder = new google.maps.Geocoder();
+            var address = allAddr;
+            geocoder.geocode({ 'address': address }, function (results, status) {
+                if (status == google.maps.GeocoderStatus.OK) {
+                    var latitude = results[0].geometry.location.lat();
+                    var longitude = results[0].geometry.location.lng();
+                    var arry =[latitude];
+                    arry[arry.length] = longitude;
+                } else {
+                    return null;
+                }
+
+                return arry;
+            });
+        };
+
 	/**
 	* a function designed to get the requested tagname data from the data 
 	* and put it in an array
@@ -790,7 +807,6 @@ function getData(id){
     <input id="orgName" name="name" type="text"><em style="color: rgb(104, 129, 162);"> *can be partial - "vol" for "Volunteer"</em></p>
     State
     <select id="state" name="state" onchange="getCities(this.value)">
-                    <!--  REQUIRED BY ASSIGNMENT-->
                     <option value="">All States</option>
                     <option value="AK">AK</option>
 
